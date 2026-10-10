@@ -603,7 +603,9 @@
     "termsApprovalError": "Не удалось принять условия. Пожалуйста, попробуйте ещё раз.",
     "termsRejected": "Условия не приняты",
     "termsRejectedMessage": "Чтобы делать ставки в этом аукционе, вы должны принять условия аукциона.",
-    "statusLabel": "Статус"
+    "statusLabel": "Статус",
+    "premiumBreakdown": "{{hammer}} + {{premium}} ком. покупателя*",
+    "premiumFootnote": "*Цена не включает налоги и стоимость доставки."
   },
   "search": {
     "placeholder": "Поиск лотов..."

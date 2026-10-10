@@ -603,7 +603,9 @@
     "termsApprovalError": "Goedkeuren van de voorwaarden mislukt. Probeer het opnieuw.",
     "termsRejected": "Voorwaarden niet goedgekeurd",
     "termsRejectedMessage": "U moet akkoord gaan met de veilingvoorwaarden om in deze veiling te kunnen bieden.",
-    "statusLabel": "Status"
+    "statusLabel": "Status",
+    "premiumBreakdown": "{{hammer}} + {{premium}} opgeld*",
+    "premiumFootnote": "*Prijs is exclusief belastingen en verzendkosten."
   },
   "search": {
     "placeholder": "Zoek kavels"

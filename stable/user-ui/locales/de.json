@@ -263,10 +263,11 @@
     "professionalReferences": "Referenzen",
     "enterProfessionalReferences": "Bei welchen anderen Auktionshäusern/Händlern haben Sie bereits gekauft?",
     "professionalReferencesInstructions": "Sie können mehrere Auktionshäuser oder Firmen aufführen, bei denen Sie bereits an Auktionen teilgenommen haben. Dies hilft uns, Ihre Identität zu überprüfen und ein reibungsloses Bieterlebnis zu gewährleisten.",
-    "optInCommunications": "Ich willige in den Erhalt von Marketinginformationen und Nachrichten via eMail, SMS und per Post ein.",
-    "optInCommunicationsHelp": "Wenn Sie zustimmen, erhalten Sie Auktionsankündigungen, den Link zum Online-Katalog samt PDF sowie Neuigkeiten und Angebote. Wichtige transaktionsbezogene E-Mails wie Rechnungen, Gebotsbestätigungen und Einlieferungsabrechnungen erhalten Sie unabhängig von dieser Einstellung immer. Für Sondervereinbarungen wenden Sie sich bitte an unser Büro.",
-    "receivePrintedMaterials": "Ich möchte gedruckte Unterlagen erhalten",
-    "receivePrintedMaterialsHelp": "Wenn Sie zustimmen, senden wir Ihnen unseren gedruckten Katalog und weitere Druckmaterialien per Post zu.",
+    "optInCommunications": "Marketing-E-Mails und Neuigkeiten erhalten",
+    "optInCommunicationsHelp": "Wenn Sie zustimmen, erhalten Sie per E-Mail Auktionsankündigungen, den Link zum Online-Katalog samt PDF sowie Neuigkeiten und Angebote. Wichtige transaktionsbezogene E-Mails wie Rechnungen, Gebotsbestätigungen und Einlieferungsabrechnungen erhalten Sie unabhängig von dieser Einstellung immer. Für Sondervereinbarungen wenden Sie sich bitte an unser Büro.",
+    "receivePrintedMaterials": "Marketing-Einwilligung (Post): Ich möchte gedruckte Kataloge und Werbepost erhalten",
+    "receivePrintedMaterialsHelp": "Wenn Sie zustimmen, senden wir Ihnen unseren gedruckten Katalog und weitere Werbematerialien per Post zu. Sie können diese Einwilligung jederzeit widerrufen, indem Sie das Häkchen entfernen.",
+    "consentUpdated": "Einwilligungen zuletzt aktualisiert am {{date}}",
     "subscription": {
       "title": "Magazin-Abonnement",
       "digitalOnly": "Digital",
@@ -602,7 +603,9 @@
     "termsApprovalError": "Zustimmung fehlgeschlagen. Bitte versuchen Sie es erneut.",
     "termsRejected": "Bedingungen nicht akzeptiert",
     "termsRejectedMessage": "Sie müssen den Auktionsbedingungen zustimmen, um in dieser Auktion bieten zu können.",
-    "statusLabel": "Status"
+    "statusLabel": "Status",
+    "premiumBreakdown": "{{hammer}} + {{premium}} Aufgeld*",
+    "premiumFootnote": "*Preis ohne Steuern und Versandkosten."
   },
   "search": {
     "placeholder": "Durchsuche Lose ..."
@@ -1042,8 +1045,8 @@
     }
   },
   "errorReport": {
-    "title": "Hoppla — ein Fehler ist aufgetreten",
-    "body": "Einige Daten auf dieser Seite konnten nicht geladen werden. Die technischen Details unten helfen unserem Support-Team bei der Behebung.",
+    "title": "O je, es ist ein Fehler aufgetreten.",
+    "body": "Es gibt Elemente auf dieser Seite, die nicht geladen werden können. Die technischen Details aus diesem Fenster können unserer IT-Abteilung helfen, das Problem zu lösen.",
     "emailButton": "Diesen Bericht an den Support senden",
     "dismiss": "Schließen"
   }

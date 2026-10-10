@@ -603,7 +603,9 @@
     "termsApprovalError": "同意条款失败，请重试。",
     "termsRejected": "未同意条款",
     "termsRejectedMessage": "您必须同意拍卖条款才能在本场拍卖会出价。",
-    "statusLabel": "状态"
+    "statusLabel": "状态",
+    "premiumBreakdown": "{{hammer}} + {{premium}} 买家佣金*",
+    "premiumFootnote": "*价格不含税费和运费。"
   },
   "search": {
     "placeholder": "Search lots..."

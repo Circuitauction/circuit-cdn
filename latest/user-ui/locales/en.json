@@ -609,7 +609,9 @@
     "termsApprovalError": "Failed to approve terms. Please try again.",
     "termsRejected": "Terms Not Approved",
     "termsRejectedMessage": "You must approve the terms of sale to place bids in this sale.",
-    "statusLabel": "Status"
+    "statusLabel": "Status",
+    "premiumBreakdown": "{{hammer}} + {{premium}} BP*",
+    "premiumFootnote": "*Price does not include taxes or shipping fees."
   },
   "search": {
     "placeholder": "Search lots..."

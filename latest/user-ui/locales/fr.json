@@ -603,7 +603,9 @@
     "termsApprovalError": "Échec de l'approbation des conditions. Veuillez réessayer.",
     "termsRejected": "Conditions non approuvées",
     "termsRejectedMessage": "Vous devez approuver les conditions de vente pour placer des enchères dans cette vente.",
-    "statusLabel": "Statut"
+    "statusLabel": "Statut",
+    "premiumBreakdown": "{{hammer}} + {{premium}} frais acheteur*",
+    "premiumFootnote": "*Prix hors taxes et frais d'expédition."
   },
   "search": {
     "placeholder": "Rechercher des lots..."

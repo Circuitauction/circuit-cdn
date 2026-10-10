@@ -603,7 +603,9 @@
     "termsApprovalError": "Zustimmung fehlgeschlagen. Bitte versuchen Sie es erneut.",
     "termsRejected": "Bedingungen nicht akzeptiert",
     "termsRejectedMessage": "Sie müssen den Auktionsbedingungen zustimmen, um in dieser Auktion bieten zu können.",
-    "statusLabel": "Status"
+    "statusLabel": "Status",
+    "premiumBreakdown": "{{hammer}} + {{premium}} Aufgeld*",
+    "premiumFootnote": "*Preis ohne Steuern und Versandkosten."
   },
   "search": {
     "placeholder": "Durchsuche Lose ..."
@@ -1043,8 +1045,8 @@
     }
   },
   "errorReport": {
-    "title": "Hoppla — ein Fehler ist aufgetreten",
-    "body": "Einige Daten auf dieser Seite konnten nicht geladen werden. Die technischen Details unten helfen unserem Support-Team bei der Behebung.",
+    "title": "O je, es ist ein Fehler aufgetreten.",
+    "body": "Es gibt Elemente auf dieser Seite, die nicht geladen werden können. Die technischen Details aus diesem Fenster können unserer IT-Abteilung helfen, das Problem zu lösen.",
     "emailButton": "Diesen Bericht an den Support senden",
     "dismiss": "Schließen"
   }
