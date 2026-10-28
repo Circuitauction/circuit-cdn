@@ -899,7 +899,7 @@
     "prev": "préc.",
     "next": "suiv.",
     "last": "dernier",
-    "nosaleNid": "Veuillez fournir un UUID de vente pour afficher les prix réalisés."
+    "noSales": "Aucune vente terminée trouvée."
   },
   "liveSaleLinks": {
     "nowBidding": "Enchères en cours",

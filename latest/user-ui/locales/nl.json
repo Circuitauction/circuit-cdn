@@ -899,7 +899,7 @@
     "prev": "vorige",
     "next": "volgende",
     "last": "laatste",
-    "nosaleNid": "Geef een veiling-UUID op om de opbrengsten te bekijken."
+    "noSales": "Geen afgelopen veilingen gevonden."
   },
   "liveSaleLinks": {
     "nowBidding": "Wordt nu geveild",

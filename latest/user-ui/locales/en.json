@@ -905,7 +905,7 @@
     "prev": "prev",
     "next": "next",
     "last": "last",
-    "nosaleNid": "Please provide a sale UUID to view prices realized."
+    "noSales": "No finished sales found."
   },
   "liveSaleLinks": {
     "nowBidding": "Now Bidding",

@@ -899,7 +899,7 @@
     "prev": "zurück",
     "next": "weiter",
     "last": "letzte",
-    "nosaleNid": "Bitte geben Sie eine Auktions-UUID an, um die Ergebnisliste anzuzeigen."
+    "noSales": "Keine abgeschlossenen Auktionen gefunden."
   },
   "liveSaleLinks": {
     "nowBidding": "Jetzt im Aufruf",
