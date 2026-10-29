@@ -393,7 +393,8 @@
     "showLess": "Show fewer bids",
     "showMoreCount": "+{{count}} more",
     "soldForLabel": "Sold For",
-    "status": "Status"
+    "status": "Status",
+    "auctioneer": "Auction house"
   },
   "myCredit": {
     "pageTitle": "Manage Your Bidding Limits",
@@ -426,7 +427,9 @@
     "rejectedCreditStatusMessage": "Your Bidding Limit request has been rejected. Your current Bidding Limit is {{amount}}.",
     "rejectedCreditStatusMessageUnlimited": "Your Bidding Limit request has been rejected. You have unlimited Bidding Limit.",
     "errorSubmittingCreditRequest": "Error submitting your Bidding Limit request.",
-    "generalError": "An error occurred. Please try again."
+    "generalError": "An error occurred. Please try again.",
+    "networkCreditNote": "Bidding limits are set by each auction house. To request or change your limit with {{auctioneer}}, please contact the auction house directly.",
+    "networkMaxBidNote": "Personal maximum bid limits are managed on each auction house's own website."
   },
   "userBlock": {
     "login": "Login",
@@ -610,6 +613,7 @@
     "termsRejected": "Terms Not Approved",
     "termsRejectedMessage": "You must approve the terms of sale to place bids in this sale.",
     "statusLabel": "Status",
+    "networkAccountPending": "Preparing your account with this auction house...",
     "premiumBreakdown": "{{hammer}} + {{premium}} BP*",
     "premiumFootnote": "*Price does not include taxes or shipping fees."
   },
@@ -668,7 +672,8 @@
     "loginRequired": "Please login to add items to watch list",
     "showDescription": "Show description",
     "hideDescription": "Hide description",
-    "close": "Close"
+    "close": "Close",
+    "auctioneer": "Auction house"
   },
   "filters": {
     "saleLabel": "Sale",
