@@ -198,7 +198,8 @@
     "signUpButton": "Nu aanmelden",
     "errorTitle": "Fout",
     "cannotAccessSettings": "Kan de site-instellingen niet openen.",
-    "successMessage": "Registratie succesvol! U wordt doorgestuurd naar uw accountpagina."
+    "successMessage": "Registratie succesvol! U wordt doorgestuurd naar uw accountpagina.",
+    "confirmEmailNotice": "Registratie gelukt! We hebben u een e-mail gestuurd: open de link erin om uw e-mailadres te bevestigen. Tot dan ziet u alleen uw account; bieden en de partnersites worden geopend na de bevestiging."
   },
   "forgotPassword": {
     "title": "Wachtwoord vergeten",
@@ -1049,5 +1050,15 @@
     "body": "Sommige gegevens op deze pagina konden niet worden geladen. De technische details hieronder kunnen ons supportteam helpen het probleem op te lossen.",
     "emailButton": "Dit rapport naar support e-mailen",
     "dismiss": "Sluiten"
+  },
+  "emailConfirmation": {
+    "confirming": "Uw e-mailadres wordt bevestigd…",
+    "confirmed": "Bedankt, uw e-mailadres is bevestigd. U kunt nu bieden en de partnersites gebruiken.",
+    "alreadyConfirmed": "Uw e-mailadres is al bevestigd.",
+    "invalid": "Deze bevestigingslink is ongeldig of verlopen.",
+    "resend": "E-mail opnieuw verzenden",
+    "sending": "De bevestigingsmail wordt verzonden…",
+    "sent": "We hebben u een nieuwe bevestigingsmail gestuurd.",
+    "resendFailed": "De bevestigingsmail kon niet worden verzonden. Probeer het later opnieuw."
   }
 }

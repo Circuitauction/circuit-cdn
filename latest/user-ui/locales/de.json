@@ -198,7 +198,8 @@
     "signUpButton": "Jetzt registrieren",
     "errorTitle": "Fehler",
     "cannotAccessSettings": "Auf die Seiteneinstellungen kann nicht zugegriffen werden.",
-    "successMessage": "Registrierung erfolgreich! Sie werden auf Ihre Profilseite weitergeleitet."
+    "successMessage": "Registrierung erfolgreich! Sie werden auf Ihre Profilseite weitergeleitet.",
+    "confirmEmailNotice": "Registrierung erfolgreich! Wir haben Ihnen eine E-Mail gesendet: Bitte öffnen Sie den Link darin, um Ihre E-Mail-Adresse zu bestätigen. Bis dahin sehen Sie nur Ihr Konto; Bieten und die Partnerseiten werden nach der Bestätigung freigeschaltet."
   },
   "forgotPassword": {
     "title": "Passwort vergessen",
@@ -1049,5 +1050,15 @@
     "body": "Es gibt Elemente auf dieser Seite, die nicht geladen werden können. Die technischen Details aus diesem Fenster können unserer IT-Abteilung helfen, das Problem zu lösen.",
     "emailButton": "Diesen Bericht an den Support senden",
     "dismiss": "Schließen"
+  },
+  "emailConfirmation": {
+    "confirming": "Ihre E-Mail-Adresse wird bestätigt…",
+    "confirmed": "Vielen Dank, Ihre E-Mail-Adresse ist bestätigt. Sie können jetzt bieten und die Partnerseiten nutzen.",
+    "alreadyConfirmed": "Ihre E-Mail-Adresse ist bereits bestätigt.",
+    "invalid": "Dieser Bestätigungslink ist ungültig oder abgelaufen.",
+    "resend": "E-Mail erneut senden",
+    "sending": "Die Bestätigungs-E-Mail wird gesendet…",
+    "sent": "Wir haben Ihnen eine neue Bestätigungs-E-Mail gesendet.",
+    "resendFailed": "Die Bestätigungs-E-Mail konnte nicht gesendet werden. Bitte versuchen Sie es später erneut."
   }
 }

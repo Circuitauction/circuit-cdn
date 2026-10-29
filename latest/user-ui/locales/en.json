@@ -198,7 +198,8 @@
     "signUpButton": "Sign Up Now",
     "errorTitle": "Error",
     "cannotAccessSettings": "Cannot access site settings.",
-    "successMessage": "Registration successful! You will be redirected to your account page."
+    "successMessage": "Registration successful! You will be redirected to your account page.",
+    "confirmEmailNotice": "Registration successful! We sent you an email: please open its link to confirm your email address. Until then you can only see your account; bidding and the partner sites open once it is confirmed."
   },
   "forgotPassword": {
     "title": "Forgot Password",
@@ -1054,5 +1055,15 @@
     "filter": {
       "allSales": "All sales"
     }
+  },
+  "emailConfirmation": {
+    "confirming": "Confirming your email address…",
+    "confirmed": "Thank you, your email address is confirmed. You can now bid and use the partner sites.",
+    "alreadyConfirmed": "Your email address is already confirmed.",
+    "invalid": "This confirmation link is invalid or has expired.",
+    "resend": "Send the email again",
+    "sending": "Sending the confirmation email…",
+    "sent": "We sent you a new confirmation email.",
+    "resendFailed": "The confirmation email could not be sent. Please try again later."
   }
 }

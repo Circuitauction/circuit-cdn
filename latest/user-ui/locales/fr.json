@@ -198,7 +198,8 @@
     "signUpButton": "S'inscrire maintenant",
     "errorTitle": "Erreur",
     "cannotAccessSettings": "Impossible d'accéder aux paramètres du site.",
-    "successMessage": "Inscription réussie ! Vous serez redirigé vers votre page de compte."
+    "successMessage": "Inscription réussie ! Vous serez redirigé vers votre page de compte.",
+    "confirmEmailNotice": "Inscription réussie ! Nous vous avons envoyé un e-mail : ouvrez son lien pour confirmer votre adresse e-mail. D'ici là, vous ne voyez que votre compte ; les enchères et les sites partenaires s'ouvrent après la confirmation."
   },
   "forgotPassword": {
     "title": "Mot de passe oublié",
@@ -1049,5 +1050,15 @@
     "body": "Certaines données de cette page n'ont pas pu être chargées. Les détails techniques ci-dessous peuvent aider notre équipe d'assistance à résoudre le problème.",
     "emailButton": "Envoyer ce rapport à l'assistance",
     "dismiss": "Fermer"
+  },
+  "emailConfirmation": {
+    "confirming": "Confirmation de votre adresse e-mail…",
+    "confirmed": "Merci, votre adresse e-mail est confirmée. Vous pouvez maintenant enchérir et utiliser les sites partenaires.",
+    "alreadyConfirmed": "Votre adresse e-mail est déjà confirmée.",
+    "invalid": "Ce lien de confirmation est invalide ou a expiré.",
+    "resend": "Renvoyer l'e-mail",
+    "sending": "Envoi de l'e-mail de confirmation…",
+    "sent": "Nous vous avons envoyé un nouvel e-mail de confirmation.",
+    "resendFailed": "L'e-mail de confirmation n'a pas pu être envoyé. Veuillez réessayer plus tard."
   }
 }

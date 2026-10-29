@@ -198,7 +198,8 @@
     "signUpButton": "立即注册",
     "errorTitle": "错误",
     "cannotAccessSettings": "无法访问网站设置。",
-    "successMessage": "注册成功！系统将自动跳转至您的账户页面。"
+    "successMessage": "注册成功！系统将自动跳转至您的账户页面。",
+    "confirmEmailNotice": "注册成功！我们已向您发送了一封电子邮件：请打开其中的链接以确认您的电子邮件地址。在此之前您只能查看自己的账户；确认后即可出价并使用合作网站。"
   },
   "forgotPassword": {
     "title": "忘记密码",
@@ -1049,5 +1050,15 @@
     "body": "此页面的部分数据无法加载。下方的技术详情可帮助我们的支持团队解决问题。",
     "emailButton": "将此报告发送给支持团队",
     "dismiss": "关闭"
+  },
+  "emailConfirmation": {
+    "confirming": "正在确认您的电子邮件地址…",
+    "confirmed": "谢谢，您的电子邮件地址已确认。您现在可以出价并使用合作网站。",
+    "alreadyConfirmed": "您的电子邮件地址已经确认。",
+    "invalid": "此确认链接无效或已过期。",
+    "resend": "重新发送邮件",
+    "sending": "正在发送确认邮件…",
+    "sent": "我们已向您发送了一封新的确认邮件。",
+    "resendFailed": "无法发送确认邮件，请稍后再试。"
   }
 }
