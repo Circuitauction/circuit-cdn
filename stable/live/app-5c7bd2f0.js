@@ -555,3 +555,73 @@ if (elmApp.ports.loadConnectedUsers && elmApp.ports.receiveConnectedUsers) {
         }, 0);
     });
 }
+
+// ── Bidder-page image loupe ──
+// A circular magnifier that follows the cursor over the main item
+// image (`.main-image` carousel on the Sale page). Pure DOM: tracking
+// the mouse through Elm would re-render the page on every pixel of
+// movement. Listeners are delegated on `document` because Elm rebuilds
+// the carousel nodes on every lot / slide change. The lens magnifies
+// from the image's `data-zoom-src` (original rendition) layered over
+// the displayed `src`, so it is sharp once the original has loaded and
+// never blank while it is still loading. Hover-only: skipped on touch
+// and coarse-pointer devices.
+(function () {
+    var LENS_SIZE = 220;
+    var ZOOM = 2.5;
+    var hoverCapable = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (!hoverCapable) { return; }
+
+    var lens = null;
+    var lensHost = null;
+
+    function hideLens() {
+        if (lens) { lens.style.display = 'none'; }
+        if (lensHost) { lensHost.classList.remove('loupe-active'); }
+    }
+
+    function ensureLens(host) {
+        if (lens && lensHost === host && lens.parentNode === host) { return lens; }
+        if (lens && lens.parentNode) { lens.parentNode.removeChild(lens); }
+        lens = document.createElement('div');
+        lens.className = 'img-loupe';
+        lens.setAttribute('aria-hidden', 'true');
+        host.appendChild(lens);
+        lensHost = host;
+        return lens;
+    }
+
+    document.addEventListener('mousemove', function (e) {
+        var img = e.target && e.target.closest ? e.target.closest('.main-image img.img-carousel-img') : null;
+        if (!img) { hideLens(); return; }
+        var host = img.closest('.main-image');
+        if (!host) { hideLens(); return; }
+
+        var rect = img.getBoundingClientRect();
+        if (!rect.width || !rect.height) { hideLens(); return; }
+        var x = e.clientX - rect.left;
+        var y = e.clientY - rect.top;
+        if (x < 0 || y < 0 || x > rect.width || y > rect.height) { hideLens(); return; }
+
+        var l = ensureLens(host);
+        var hostRect = host.getBoundingClientRect();
+        var zoomSrc = img.getAttribute('data-zoom-src') || img.src;
+        var layers = zoomSrc === img.src
+            ? 'url("' + img.src + '")'
+            : 'url("' + zoomSrc + '"), url("' + img.src + '")';
+        if (l.getAttribute('data-src') !== zoomSrc) {
+            l.style.backgroundImage = layers;
+            l.setAttribute('data-src', zoomSrc);
+        }
+        l.style.backgroundSize = (rect.width * ZOOM) + 'px ' + (rect.height * ZOOM) + 'px';
+        l.style.backgroundPosition = (LENS_SIZE / 2 - x * ZOOM) + 'px ' + (LENS_SIZE / 2 - y * ZOOM) + 'px';
+        l.style.left = (e.clientX - hostRect.left - LENS_SIZE / 2) + 'px';
+        l.style.top = (e.clientY - hostRect.top - LENS_SIZE / 2) + 'px';
+        l.style.display = 'block';
+        host.classList.add('loupe-active');
+    }, { passive: true });
+
+    document.addEventListener('mouseleave', hideLens, true);
+    window.addEventListener('scroll', hideLens, { passive: true });
+    window.addEventListener('blur', hideLens);
+})();
