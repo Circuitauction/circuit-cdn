@@ -429,8 +429,7 @@
     "rejectedCreditStatusMessageUnlimited": "Your Bidding Limit request has been rejected. You have unlimited Bidding Limit.",
     "errorSubmittingCreditRequest": "Error submitting your Bidding Limit request.",
     "generalError": "An error occurred. Please try again.",
-    "networkCreditNote": "Bidding limits are set by each auction house. To request or change your limit with {{auctioneer}}, please contact the auction house directly.",
-    "networkMaxBidNote": "Personal maximum bid limits are managed on each auction house's own website."
+    "networkLimitsUnavailable": "Your bidding limits with {{auctioneer}} could not be loaded right now. Please try again later."
   },
   "userBlock": {
     "login": "Login",
