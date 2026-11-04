@@ -3189,8 +3189,10 @@ var _Gizra$circuit_bid$Currency_Model$currencySymbol = function (currency) {
 			return 'CA$';
 		case 'UAH':
 			return '₴';
-		default:
+		case 'ZAR':
 			return 'R';
+		default:
+			return 'AU$';
 	}
 };
 var _Gizra$circuit_bid$Currency_Model$currencyToCode = function (currency) {
@@ -3214,10 +3216,13 @@ var _Gizra$circuit_bid$Currency_Model$currencyToCode = function (currency) {
 			return 'CAD';
 		case 'UAH':
 			return 'UAH';
-		default:
+		case 'ZAR':
 			return 'ZAR';
+		default:
+			return 'AUD';
 	}
 };
+var _Gizra$circuit_bid$Currency_Model$AUD = {ctor: 'AUD'};
 var _Gizra$circuit_bid$Currency_Model$ZAR = {ctor: 'ZAR'};
 var _Gizra$circuit_bid$Currency_Model$UAH = {ctor: 'UAH'};
 var _Gizra$circuit_bid$Currency_Model$CAD = {ctor: 'CAD'};
@@ -3251,6 +3256,8 @@ var _Gizra$circuit_bid$Currency_Model$currencyFromCode = function (code) {
 			return _elm_lang$core$Maybe$Just(_Gizra$circuit_bid$Currency_Model$UAH);
 		case 'ZAR':
 			return _elm_lang$core$Maybe$Just(_Gizra$circuit_bid$Currency_Model$ZAR);
+		case 'AUD':
+			return _elm_lang$core$Maybe$Just(_Gizra$circuit_bid$Currency_Model$AUD);
 		default:
 			return _elm_lang$core$Maybe$Nothing;
 	}
@@ -13850,6 +13857,8 @@ var _Gizra$circuit_bid$Amount$getLocalFromCurrency = function (currency) {
 			return _cuducos$elm_format_number$FormatNumber_Locales$usLocale;
 		case 'UAH':
 			return _cuducos$elm_format_number$FormatNumber_Locales$usLocale;
+		case 'ZAR':
+			return _cuducos$elm_format_number$FormatNumber_Locales$usLocale;
 		default:
 			return _cuducos$elm_format_number$FormatNumber_Locales$usLocale;
 	}
@@ -13948,13 +13957,23 @@ var _Gizra$circuit_bid$Amount$showWithCurrency = F3(
 						_1: {ctor: '[]'}
 					}
 				};
-			default:
+			case 'ZAR':
 				return {
 					ctor: '::',
 					_0: wrapper('R'),
 					_1: {
 						ctor: '::',
 						_0: value,
+						_1: {ctor: '[]'}
+					}
+				};
+			default:
+				return {
+					ctor: '::',
+					_0: value,
+					_1: {
+						ctor: '::',
+						_0: wrapper('AU$'),
 						_1: {ctor: '[]'}
 					}
 				};
@@ -49674,6 +49693,8 @@ var _Gizra$circuit_bid$Currency_Decoder$decodeCurrency = A2(
 				return _elm_lang$core$Json_Decode$succeed(_Gizra$circuit_bid$Currency_Model$UAH);
 			case 'ZAR':
 				return _elm_lang$core$Json_Decode$succeed(_Gizra$circuit_bid$Currency_Model$ZAR);
+			case 'AUD':
+				return _elm_lang$core$Json_Decode$succeed(_Gizra$circuit_bid$Currency_Model$AUD);
 			default:
 				return _elm_lang$core$Json_Decode$fail(
 					A2(_elm_lang$core$Basics_ops['++'], 'Could not recognise currency: ', currency));

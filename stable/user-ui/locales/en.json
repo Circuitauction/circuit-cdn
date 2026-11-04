@@ -198,7 +198,8 @@
     "signUpButton": "Sign Up Now",
     "errorTitle": "Error",
     "cannotAccessSettings": "Cannot access site settings.",
-    "successMessage": "Registration successful! You will be redirected to your account page."
+    "successMessage": "Registration successful! You will be redirected to your account page.",
+    "confirmEmailNotice": "Registration successful! We sent you an email: please open its link to confirm your email address. Until then you can only see your account; bidding and the partner sites open once it is confirmed."
   },
   "forgotPassword": {
     "title": "Forgot Password",
@@ -393,7 +394,8 @@
     "showLess": "Show fewer bids",
     "showMoreCount": "+{{count}} more",
     "soldForLabel": "Sold For",
-    "status": "Status"
+    "status": "Status",
+    "auctioneer": "Auction house"
   },
   "myCredit": {
     "pageTitle": "Manage Your Bidding Limits",
@@ -426,7 +428,8 @@
     "rejectedCreditStatusMessage": "Your Bidding Limit request has been rejected. Your current Bidding Limit is {{amount}}.",
     "rejectedCreditStatusMessageUnlimited": "Your Bidding Limit request has been rejected. You have unlimited Bidding Limit.",
     "errorSubmittingCreditRequest": "Error submitting your Bidding Limit request.",
-    "generalError": "An error occurred. Please try again."
+    "generalError": "An error occurred. Please try again.",
+    "networkLimitsUnavailable": "Your bidding limits with {{auctioneer}} could not be loaded right now. Please try again later."
   },
   "userBlock": {
     "login": "Login",
@@ -610,6 +613,7 @@
     "termsRejected": "Terms Not Approved",
     "termsRejectedMessage": "You must approve the terms of sale to place bids in this sale.",
     "statusLabel": "Status",
+    "networkAccountPending": "Preparing your account with this auction house...",
     "premiumBreakdown": "{{hammer}} + {{premium}} BP*",
     "premiumFootnote": "*Price does not include taxes or shipping fees."
   },
@@ -668,7 +672,8 @@
     "loginRequired": "Please login to add items to watch list",
     "showDescription": "Show description",
     "hideDescription": "Hide description",
-    "close": "Close"
+    "close": "Close",
+    "auctioneer": "Auction house"
   },
   "filters": {
     "saleLabel": "Sale",
@@ -905,7 +910,7 @@
     "prev": "prev",
     "next": "next",
     "last": "last",
-    "nosaleNid": "Please provide a sale UUID to view prices realized."
+    "noSales": "No finished sales found."
   },
   "liveSaleLinks": {
     "nowBidding": "Now Bidding",
@@ -1049,5 +1054,15 @@
     "filter": {
       "allSales": "All sales"
     }
+  },
+  "emailConfirmation": {
+    "confirming": "Confirming your email address…",
+    "confirmed": "Thank you, your email address is confirmed. You can now bid and use the partner sites.",
+    "alreadyConfirmed": "Your email address is already confirmed.",
+    "invalid": "This confirmation link is invalid or has expired.",
+    "resend": "Send the email again",
+    "sending": "Sending the confirmation email…",
+    "sent": "We sent you a new confirmation email.",
+    "resendFailed": "The confirmation email could not be sent. Please try again later."
   }
 }
