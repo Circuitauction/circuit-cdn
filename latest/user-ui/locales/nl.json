@@ -1059,6 +1059,9 @@
     "resend": "E-mail opnieuw verzenden",
     "sending": "De bevestigingsmail wordt verzonden…",
     "sent": "We hebben u een nieuwe bevestigingsmail gestuurd.",
-    "resendFailed": "De bevestigingsmail kon niet worden verzonden. Probeer het later opnieuw."
+    "resendFailed": "De bevestigingsmail kon niet worden verzonden. Probeer het later opnieuw.",
+    "requiredTitle": "Bevestig uw e-mailadres",
+    "requiredText": "Uw account wacht op de bevestiging van uw e-mailadres. Open de link in de e-mail die we u hebben gestuurd om uw account, biedingen en favorieten te zien.",
+    "requiredTextWithEmail": "Uw account wacht op de bevestiging van uw e-mailadres. Open de link in de e-mail die we naar {{email}} hebben gestuurd om uw account, biedingen en favorieten te zien."
   }
 }

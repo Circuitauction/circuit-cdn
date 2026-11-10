@@ -1063,6 +1063,9 @@
     "resend": "Send the email again",
     "sending": "Sending the confirmation email…",
     "sent": "We sent you a new confirmation email.",
-    "resendFailed": "The confirmation email could not be sent. Please try again later."
+    "resendFailed": "The confirmation email could not be sent. Please try again later.",
+    "requiredTitle": "Please confirm your email address",
+    "requiredText": "Your account is waiting for your email confirmation. Open the link in the email we sent you to see your account, bids and favorites.",
+    "requiredTextWithEmail": "Your account is waiting for your email confirmation. Open the link in the email we sent to {{email}} to see your account, bids and favorites."
   }
 }

@@ -1059,6 +1059,9 @@
     "resend": "Renvoyer l'e-mail",
     "sending": "Envoi de l'e-mail de confirmation…",
     "sent": "Nous vous avons envoyé un nouvel e-mail de confirmation.",
-    "resendFailed": "L'e-mail de confirmation n'a pas pu être envoyé. Veuillez réessayer plus tard."
+    "resendFailed": "L'e-mail de confirmation n'a pas pu être envoyé. Veuillez réessayer plus tard.",
+    "requiredTitle": "Veuillez confirmer votre adresse e-mail",
+    "requiredText": "Votre compte attend la confirmation de votre adresse e-mail. Ouvrez le lien de l'e-mail que nous vous avons envoyé pour voir votre compte, vos enchères et vos favoris.",
+    "requiredTextWithEmail": "Votre compte attend la confirmation de votre adresse e-mail. Ouvrez le lien de l'e-mail que nous avons envoyé à {{email}} pour voir votre compte, vos enchères et vos favoris."
   }
 }

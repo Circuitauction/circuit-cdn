@@ -1059,6 +1059,9 @@
     "resend": "E-Mail erneut senden",
     "sending": "Die Bestätigungs-E-Mail wird gesendet…",
     "sent": "Wir haben Ihnen eine neue Bestätigungs-E-Mail gesendet.",
-    "resendFailed": "Die Bestätigungs-E-Mail konnte nicht gesendet werden. Bitte versuchen Sie es später erneut."
+    "resendFailed": "Die Bestätigungs-E-Mail konnte nicht gesendet werden. Bitte versuchen Sie es später erneut.",
+    "requiredTitle": "Bitte bestätigen Sie Ihre E-Mail-Adresse",
+    "requiredText": "Ihr Konto wartet auf die Bestätigung Ihrer E-Mail-Adresse. Öffnen Sie den Link in der E-Mail, die wir Ihnen gesendet haben, um Ihr Konto, Ihre Gebote und Favoriten zu sehen.",
+    "requiredTextWithEmail": "Ihr Konto wartet auf die Bestätigung Ihrer E-Mail-Adresse. Öffnen Sie den Link in der E-Mail, die wir an {{email}} gesendet haben, um Ihr Konto, Ihre Gebote und Favoriten zu sehen."
   }
 }
