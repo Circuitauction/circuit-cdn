@@ -34003,6 +34003,8 @@ var _Gizra$circuit_bid$Translate$translateString = F2(
 					return {english: 'Access denied', dutch: 'Toegang geweigerd', german: 'Zugriff abgelehnt', hebrew: 'גישה נדחתה', russian: 'Доступ запрещен', chinese: '访问被拒绝', french: 'Accès refusé'};
 				case 'AccountPendingApproval':
 					return {english: 'Account pending approval', dutch: 'Account wacht op goedkeuring', german: 'Konto ist ausstehend', hebrew: 'חשבון טרם אושר', russian: 'Учетная запись ожидает одобрения', chinese: '帐户待批准', french: 'Compte en attente d\'approbation'};
+				case 'AccountPendingEmailConfirmation':
+					return {english: 'Please confirm your email address: click the link in the email we sent you', dutch: 'Bevestig uw e-mailadres: klik op de link in de e-mail die we u hebben gestuurd', german: 'Bitte bestätigen Sie Ihre E-Mail-Adresse: Klicken Sie auf den Link in der E-Mail, die wir Ihnen gesendet haben', hebrew: 'יש לאשר את כתובת הדוא״ל: לחצו על הקישור בהודעה ששלחנו אליכם', russian: 'Подтвердите адрес электронной почты: перейдите по ссылке в письме, которое мы вам отправили', chinese: '请确认您的电子邮件地址：点击我们发送给您的邮件中的链接', french: 'Veuillez confirmer votre adresse e-mail : cliquez sur le lien dans l\'e-mail que nous vous avons envoyé'};
 				case 'Active':
 					return {english: 'Active', dutch: 'Actief', german: 'Aktiv', hebrew: 'פעיל', russian: 'Активный', chinese: '活跃的', french: 'Actif'};
 				case 'AddNextBid':
@@ -40506,6 +40508,7 @@ var _Gizra$circuit_bid$Translate$AddNextBid = F2(
 		return {ctor: 'AddNextBid', _0: a, _1: b};
 	});
 var _Gizra$circuit_bid$Translate$Active = {ctor: 'Active'};
+var _Gizra$circuit_bid$Translate$AccountPendingEmailConfirmation = {ctor: 'AccountPendingEmailConfirmation'};
 var _Gizra$circuit_bid$Translate$AccountPendingApproval = {ctor: 'AccountPendingApproval'};
 var _Gizra$circuit_bid$Translate$AccessDenied = {ctor: 'AccessDenied'};
 var _Gizra$circuit_bid$Translate$AcceptTerms = {ctor: 'AcceptTerms'};
@@ -42077,6 +42080,7 @@ var _Gizra$circuit_bid$User_Model$Authenticated = function (a) {
 var _Gizra$circuit_bid$User_Model$Anonymous = {ctor: 'Anonymous'};
 var _Gizra$circuit_bid$User_Model$Privileged = {ctor: 'Privileged'};
 var _Gizra$circuit_bid$User_Model$Bidder = {ctor: 'Bidder'};
+var _Gizra$circuit_bid$User_Model$PendingEmailConfirmation = {ctor: 'PendingEmailConfirmation'};
 var _Gizra$circuit_bid$User_Model$Pending = {ctor: 'Pending'};
 var _Gizra$circuit_bid$User_Model$Active = {ctor: 'Active'};
 
@@ -46769,25 +46773,33 @@ var _Gizra$circuit_bid$User_Utils$getWebsiteBidderInfo = F3(
 			},
 			A3(_Gizra$circuit_bid$User_Utils$getWebsiteBidderInfoEditable, user, modelBackend, saleUuid));
 	});
-var _Gizra$circuit_bid$User_Utils$isActive = function (user) {
+var _Gizra$circuit_bid$User_Utils$isPendingEmailConfirmation = function (user) {
 	var _p4 = user;
 	if (_p4.ctor === 'Authenticated') {
-		return _elm_lang$core$Native_Utils.eq(_p4._0.status, _Gizra$circuit_bid$User_Model$Active);
+		return _elm_lang$core$Native_Utils.eq(_p4._0.status, _Gizra$circuit_bid$User_Model$PendingEmailConfirmation);
+	} else {
+		return false;
+	}
+};
+var _Gizra$circuit_bid$User_Utils$isActive = function (user) {
+	var _p5 = user;
+	if (_p5.ctor === 'Authenticated') {
+		return _elm_lang$core$Native_Utils.eq(_p5._0.status, _Gizra$circuit_bid$User_Model$Active);
 	} else {
 		return false;
 	}
 };
 var _Gizra$circuit_bid$User_Utils$isPrivileged = function (user) {
-	var _p5 = user;
-	if (_p5.ctor === 'Authenticated') {
-		return _elm_lang$core$Native_Utils.eq(_p5._0.userType, _Gizra$circuit_bid$User_Model$Privileged);
+	var _p6 = user;
+	if (_p6.ctor === 'Authenticated') {
+		return _elm_lang$core$Native_Utils.eq(_p6._0.userType, _Gizra$circuit_bid$User_Model$Privileged);
 	} else {
 		return false;
 	}
 };
 var _Gizra$circuit_bid$User_Utils$isAuthenticated = function (user) {
-	var _p6 = user;
-	if (_p6.ctor === 'Authenticated') {
+	var _p7 = user;
+	if (_p7.ctor === 'Authenticated') {
 		return true;
 	} else {
 		return false;
@@ -58487,6 +58499,23 @@ var _Gizra$circuit_bid$User_Decoder$stringToStatus = function (status) {
 var _Gizra$circuit_bid$User_Decoder$decodeType = function (stringToType) {
 	return A2(_elm_lang$core$Json_Decode$andThen, stringToType, _elm_lang$core$Json_Decode$string);
 };
+var _Gizra$circuit_bid$User_Decoder$decodeStatus = A2(
+	_elm_lang$core$Json_Decode$andThen,
+	function (status) {
+		return _elm_lang$core$Native_Utils.eq(status, _Gizra$circuit_bid$User_Model$Pending) ? A2(
+			_elm_lang$core$Json_Decode$map,
+			function (required) {
+				return _elm_lang$core$Native_Utils.eq(
+					required,
+					_elm_lang$core$Maybe$Just(true)) ? _Gizra$circuit_bid$User_Model$PendingEmailConfirmation : _Gizra$circuit_bid$User_Model$Pending;
+			},
+			_elm_lang$core$Json_Decode$maybe(
+				A2(_elm_lang$core$Json_Decode$field, 'email_confirmation_required', _elm_lang$core$Json_Decode$bool))) : _elm_lang$core$Json_Decode$succeed(status);
+	},
+	A2(
+		_elm_lang$core$Json_Decode$field,
+		'status',
+		_Gizra$circuit_bid$User_Decoder$decodeType(_Gizra$circuit_bid$User_Decoder$stringToStatus)));
 var _Gizra$circuit_bid$User_Decoder$decodeAddress = A3(
 	_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
 	'postal_code',
@@ -58527,10 +58556,9 @@ var _Gizra$circuit_bid$User_Decoder$decodeUser = A4(
 			_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
 			'user_type',
 			_Gizra$circuit_bid$User_Decoder$decodeType(_Gizra$circuit_bid$User_Decoder$stringToUserType),
-			A3(
-				_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
-				'status',
-				_Gizra$circuit_bid$User_Decoder$decodeType(_Gizra$circuit_bid$User_Decoder$stringToStatus),
+			A2(
+				_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$custom,
+				_Gizra$circuit_bid$User_Decoder$decodeStatus,
 				A3(
 					_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
 					'uuid',
@@ -98309,12 +98337,17 @@ var _Gizra$circuit_bid$Pages_Sale_View$itemView = function (currentDate) {
 														}
 													}
 												}();
-												return _Gizra$circuit_bid$User_Utils$isAuthenticated(user) ? (_Gizra$circuit_bid$User_Utils$isActive(user) ? (_elm_lang$core$Native_Utils.eq(_p77.status, _Gizra$circuit_bid$Sale_Model$LiveAuctionOpen) ? activeUserButton : _Gizra$circuit_bid$Utils_Html$emptyNode) : messageBlock(
+												return _Gizra$circuit_bid$User_Utils$isAuthenticated(user) ? (_Gizra$circuit_bid$User_Utils$isActive(user) ? (_elm_lang$core$Native_Utils.eq(_p77.status, _Gizra$circuit_bid$Sale_Model$LiveAuctionOpen) ? activeUserButton : _Gizra$circuit_bid$Utils_Html$emptyNode) : (_Gizra$circuit_bid$User_Utils$isPendingEmailConfirmation(user) ? messageBlock(
+													{
+														ctor: '::',
+														_0: A2(_Gizra$circuit_bid$Translate$translateText, language, _Gizra$circuit_bid$Translate$AccountPendingEmailConfirmation),
+														_1: {ctor: '[]'}
+													}) : messageBlock(
 													{
 														ctor: '::',
 														_0: A2(_Gizra$circuit_bid$Translate$translateText, language, _Gizra$circuit_bid$Translate$AccountPendingApproval),
 														_1: {ctor: '[]'}
-													})) : A2(
+													}))) : A2(
 													_elm_lang$html$Html$div,
 													{
 														ctor: '::',
@@ -102631,12 +102664,17 @@ var _Gizra$circuit_bid$Pages_SaleV1_View$itemView = function (currentDate) {
 													}
 												}
 											}();
-											return _Gizra$circuit_bid$User_Utils$isAuthenticated(user) ? (_Gizra$circuit_bid$User_Utils$isActive(user) ? (_elm_lang$core$Native_Utils.eq(_p51.status, _Gizra$circuit_bid$Sale_Model$LiveAuctionOpen) ? activeUserButton : _Gizra$circuit_bid$Utils_Html$emptyNode) : messageBlock(
+											return _Gizra$circuit_bid$User_Utils$isAuthenticated(user) ? (_Gizra$circuit_bid$User_Utils$isActive(user) ? (_elm_lang$core$Native_Utils.eq(_p51.status, _Gizra$circuit_bid$Sale_Model$LiveAuctionOpen) ? activeUserButton : _Gizra$circuit_bid$Utils_Html$emptyNode) : (_Gizra$circuit_bid$User_Utils$isPendingEmailConfirmation(user) ? messageBlock(
+												{
+													ctor: '::',
+													_0: A2(_Gizra$circuit_bid$Translate$translateText, language, _Gizra$circuit_bid$Translate$AccountPendingEmailConfirmation),
+													_1: {ctor: '[]'}
+												}) : messageBlock(
 												{
 													ctor: '::',
 													_0: A2(_Gizra$circuit_bid$Translate$translateText, language, _Gizra$circuit_bid$Translate$AccountPendingApproval),
 													_1: {ctor: '[]'}
-												})) : A2(
+												}))) : A2(
 												_elm_lang$html$Html$map,
 												_Gizra$circuit_bid$Pages_Sale_Model$MsgLogin,
 												A5(
