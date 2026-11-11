@@ -176,7 +176,8 @@
     "passwordPlaceholder": "Geben Sie Ihr Passwort ein",
     "errors": {
       "badCredentials": "Wir konnten Ihre Angaben nicht verifizieren. Bitte Prüfen Sie, ob Sie die korrekte E-Mail-Adresse und das richtige Passwort verwenden. Sollten Sie weiterhin Probleme haben sich anzumelden, benutzen Sie bitte die 'Passwort vergessen' - Funktion um Ihr Passwort zurückzusetzen, oder kontaktieren Sie uns.",
-      "networkError": "Verbindungsproblem. Bitte versuchen Sie es später erneut. (Login)"
+      "networkError": "Verbindungsproblem. Bitte versuchen Sie es später erneut. (Login)",
+      "serverError": "[NEEDS_TRANSLATION]We couldn't sign you in right now because of a problem on our side. Please try again later, or contact us if it continues."
     }
   },
   "register": {
@@ -394,7 +395,8 @@
     "showLess": "Weniger Gebote anzeigen",
     "showMoreCount": "+{{count}} weitere",
     "soldForLabel": "Zuschlagspreis",
-    "status": "Status"
+    "status": "Status",
+    "auctioneer": "[NEEDS_TRANSLATION]Auction house"
   },
   "myCredit": {
     "pageTitle": "Verwalten Sie Ihre Kredit- und Bietlimite",
@@ -427,7 +429,8 @@
     "rejectedCreditStatusMessage": "Ihre Anfrage für ein Bietlimit wurde abgelehnt. Ihr aktuelles Bietlimit beträgt {{amount}}.",
     "rejectedCreditStatusMessageUnlimited": "Ihre Kreditanfrage wurde zurückgewiesen. Sie haben bereits unlimitierten Kredit.",
     "errorSubmittingCreditRequest": "Fehler beim Senden Ihrer Bietlimit-Anfrage.",
-    "generalError": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+    "generalError": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "networkLimitsUnavailable": "[NEEDS_TRANSLATION]Your bidding limits with {{auctioneer}} could not be loaded right now. Please try again later."
   },
   "userBlock": {
     "login": "Anmelden",
@@ -606,7 +609,8 @@
     "termsRejectedMessage": "Sie müssen den Auktionsbedingungen zustimmen, um in dieser Auktion bieten zu können.",
     "statusLabel": "Status",
     "premiumBreakdown": "{{hammer}} + {{premium}} Aufgeld*",
-    "premiumFootnote": "*Preis ohne Steuern und Versandkosten."
+    "premiumFootnote": "*Preis ohne Steuern und Versandkosten.",
+    "networkAccountPending": "[NEEDS_TRANSLATION]Preparing your account with this auction house..."
   },
   "search": {
     "placeholder": "Durchsuche Lose ..."
@@ -663,7 +667,8 @@
     "loginRequired": "Bitte loggen Sie sich ein, um Losen Ihren Favoriten hinzuzufügen",
     "showDescription": "Beschreibung anzeigen",
     "hideDescription": "Beschreibung ausblenden",
-    "close": "Schließen"
+    "close": "Schließen",
+    "auctioneer": "[NEEDS_TRANSLATION]Auction house"
   },
   "filters": {
     "saleLabel": "Auktion",

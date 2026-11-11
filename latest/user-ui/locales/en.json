@@ -176,7 +176,8 @@
     "passwordPlaceholder": "Enter your password",
     "errors": {
       "badCredentials": "We couldn't verify your account. Please check that you've entered the correct email and password. If you continue to have trouble, you can reset your password using the 'Forgot Password' link below, or contact us for more assistance.",
-      "networkError": "Connection problem. Please try again later."
+      "networkError": "Connection problem. Please try again later.",
+      "serverError": "We couldn't sign you in right now because of a problem on our side. Please try again later, or contact us if it continues."
     }
   },
   "register": {

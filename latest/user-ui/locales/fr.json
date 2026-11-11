@@ -176,7 +176,8 @@
     "passwordPlaceholder": "Entrez votre mot de passe",
     "errors": {
       "badCredentials": "Nous n'avons pas pu vérifier votre compte. Veuillez vérifier que vous avez saisi le bon e-mail et mot de passe. Si vous continuez à avoir des problèmes, vous pouvez réinitialiser votre mot de passe en utilisant le lien 'Mot de passe oublié' ci-dessous, ou nous contacter pour plus d'assistance.",
-      "networkError": "Problème de connexion. Veuillez réessayer plus tard."
+      "networkError": "Problème de connexion. Veuillez réessayer plus tard.",
+      "serverError": "[NEEDS_TRANSLATION]We couldn't sign you in right now because of a problem on our side. Please try again later, or contact us if it continues."
     }
   },
   "register": {
@@ -394,7 +395,8 @@
     "showLess": "Afficher moins d'enchères",
     "showMoreCount": "+{{count}} de plus",
     "soldForLabel": "Prix d'adjudication",
-    "status": "Statut"
+    "status": "Statut",
+    "auctioneer": "[NEEDS_TRANSLATION]Auction house"
   },
   "myCredit": {
     "pageTitle": "Gérer votre crédit et limites d'enchères",
@@ -427,7 +429,8 @@
     "rejectedCreditStatusMessage": "Votre demande de limite d'enchères a été rejetée. Votre limite d'enchères actuelle est de {{amount}}.",
     "rejectedCreditStatusMessageUnlimited": "Votre demande de crédit a été rejetée. Vous avez un crédit illimité.",
     "errorSubmittingCreditRequest": "Erreur lors de l'envoi de votre demande de limite d'enchères.",
-    "generalError": "Une erreur est survenue. Veuillez réessayer."
+    "generalError": "Une erreur est survenue. Veuillez réessayer.",
+    "networkLimitsUnavailable": "[NEEDS_TRANSLATION]Your bidding limits with {{auctioneer}} could not be loaded right now. Please try again later."
   },
   "userBlock": {
     "login": "Connexion",
@@ -606,7 +609,8 @@
     "termsRejectedMessage": "Vous devez approuver les conditions de vente pour placer des enchères dans cette vente.",
     "statusLabel": "Statut",
     "premiumBreakdown": "{{hammer}} + {{premium}} frais acheteur*",
-    "premiumFootnote": "*Prix hors taxes et frais d'expédition."
+    "premiumFootnote": "*Prix hors taxes et frais d'expédition.",
+    "networkAccountPending": "[NEEDS_TRANSLATION]Preparing your account with this auction house..."
   },
   "search": {
     "placeholder": "Rechercher des lots..."
@@ -663,7 +667,8 @@
     "loginRequired": "Veuillez vous connecter pour ajouter des articles aux favoris",
     "showDescription": "Afficher la description",
     "hideDescription": "Masquer la description",
-    "close": "Fermer"
+    "close": "Fermer",
+    "auctioneer": "[NEEDS_TRANSLATION]Auction house"
   },
   "filters": {
     "saleLabel": "Vente",

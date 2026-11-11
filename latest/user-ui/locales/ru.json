@@ -176,7 +176,8 @@
     "passwordPlaceholder": "Введите ваш пароль",
     "errors": {
       "badCredentials": "Нам не удалось подтвердить вашу учётную запись. Пожалуйста, проверьте правильность введённых адреса электронной почты и пароля. Если проблема сохраняется, вы можете сбросить пароль по ссылке «Забыли пароль?» ниже или связаться с нами для получения помощи.",
-      "networkError": "Проблема с соединением. Пожалуйста, попробуйте позже."
+      "networkError": "Проблема с соединением. Пожалуйста, попробуйте позже.",
+      "serverError": "[NEEDS_TRANSLATION]We couldn't sign you in right now because of a problem on our side. Please try again later, or contact us if it continues."
     }
   },
   "register": {
@@ -394,7 +395,8 @@
     "showLess": "Показать меньше ставок",
     "showMoreCount": "ещё +{{count}}",
     "soldForLabel": "Цена продажи",
-    "status": "Статус"
+    "status": "Статус",
+    "auctioneer": "[NEEDS_TRANSLATION]Auction house"
   },
   "myCredit": {
     "pageTitle": "Управление лимитами ставок",
@@ -427,7 +429,8 @@
     "rejectedCreditStatusMessage": "Ваш запрос на лимит ставок отклонён. Ваш текущий лимит ставок составляет {{amount}}.",
     "rejectedCreditStatusMessageUnlimited": "Ваш запрос лимита ставок отклонён. У вас неограниченный лимит ставок.",
     "errorSubmittingCreditRequest": "Ошибка при отправке запроса на лимит ставок.",
-    "generalError": "Произошла ошибка. Пожалуйста, попробуйте ещё раз."
+    "generalError": "Произошла ошибка. Пожалуйста, попробуйте ещё раз.",
+    "networkLimitsUnavailable": "[NEEDS_TRANSLATION]Your bidding limits with {{auctioneer}} could not be loaded right now. Please try again later."
   },
   "userBlock": {
     "login": "Войти",
@@ -606,7 +609,8 @@
     "termsRejectedMessage": "Чтобы делать ставки в этом аукционе, вы должны принять условия аукциона.",
     "statusLabel": "Статус",
     "premiumBreakdown": "{{hammer}} + {{premium}} ком. покупателя*",
-    "premiumFootnote": "*Цена не включает налоги и стоимость доставки."
+    "premiumFootnote": "*Цена не включает налоги и стоимость доставки.",
+    "networkAccountPending": "[NEEDS_TRANSLATION]Preparing your account with this auction house..."
   },
   "search": {
     "placeholder": "Поиск лотов..."
@@ -663,7 +667,8 @@
     "loginRequired": "Пожалуйста, войдите, чтобы добавлять лоты в избранное",
     "showDescription": "Показать описание",
     "hideDescription": "Скрыть описание",
-    "close": "Закрыть"
+    "close": "Закрыть",
+    "auctioneer": "[NEEDS_TRANSLATION]Auction house"
   },
   "filters": {
     "saleLabel": "Аукцион",

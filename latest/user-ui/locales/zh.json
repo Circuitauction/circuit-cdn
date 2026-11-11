@@ -176,7 +176,8 @@
     "passwordPlaceholder": "请输入您的密码",
     "errors": {
       "badCredentials": "We couldn't verify your account. Please check that you've entered the correct email and password. If you continue to have trouble, you can reset your password using the 'Forgot Password' link below, or contact us for more assistance.",
-      "networkError": "Connection problem. Please try again later."
+      "networkError": "Connection problem. Please try again later.",
+      "serverError": "[NEEDS_TRANSLATION]We couldn't sign you in right now because of a problem on our side. Please try again later, or contact us if it continues."
     }
   },
   "register": {
@@ -394,7 +395,8 @@
     "showLess": "收起部分出价",
     "showMoreCount": "还有 {{count}} 条",
     "soldForLabel": "落槌价",
-    "status": "状态"
+    "status": "状态",
+    "auctioneer": "[NEEDS_TRANSLATION]Auction house"
   },
   "myCredit": {
     "pageTitle": "Manage Your Credit & Bidding Limits",
@@ -427,7 +429,8 @@
     "rejectedCreditStatusMessage": "您的出价限额申请已被拒绝。您当前的出价限额为 {{amount}}。",
     "rejectedCreditStatusMessageUnlimited": "Your credit request has been rejected. You have unlimited credit.",
     "errorSubmittingCreditRequest": "提交出价限额申请时出错。",
-    "generalError": "发生错误，请重试。"
+    "generalError": "发生错误，请重试。",
+    "networkLimitsUnavailable": "[NEEDS_TRANSLATION]Your bidding limits with {{auctioneer}} could not be loaded right now. Please try again later."
   },
   "userBlock": {
     "login": "登录",
@@ -606,7 +609,8 @@
     "termsRejectedMessage": "您必须同意拍卖条款才能在本场拍卖会出价。",
     "statusLabel": "状态",
     "premiumBreakdown": "{{hammer}} + {{premium}} 买家佣金*",
-    "premiumFootnote": "*价格不含税费和运费。"
+    "premiumFootnote": "*价格不含税费和运费。",
+    "networkAccountPending": "[NEEDS_TRANSLATION]Preparing your account with this auction house..."
   },
   "search": {
     "placeholder": "Search lots..."
@@ -663,7 +667,8 @@
     "loginRequired": "Please login to add items to favorites",
     "showDescription": "显示描述",
     "hideDescription": "隐藏描述",
-    "close": "关闭"
+    "close": "关闭",
+    "auctioneer": "[NEEDS_TRANSLATION]Auction house"
   },
   "filters": {
     "saleLabel": "Sale",

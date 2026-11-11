@@ -176,7 +176,8 @@
     "passwordPlaceholder": "Voer uw wachtwoord in",
     "errors": {
       "badCredentials": "We konden uw account niet verifiëren. Controleer of u het juiste e-mailadres en wachtwoord heeft ingevoerd. Als u problemen blijft ondervinden, kunt u uw wachtwoord opnieuw instellen via de link 'Wachtwoord vergeten' hieronder, of neem contact met ons op voor verdere hulp.",
-      "networkError": "Verbindingsprobleem. Probeer het later opnieuw."
+      "networkError": "Verbindingsprobleem. Probeer het later opnieuw.",
+      "serverError": "[NEEDS_TRANSLATION]We couldn't sign you in right now because of a problem on our side. Please try again later, or contact us if it continues."
     }
   },
   "register": {
@@ -394,7 +395,8 @@
     "showLess": "Minder biedingen tonen",
     "showMoreCount": "+{{count}} meer",
     "soldForLabel": "Verkocht voor",
-    "status": "Status"
+    "status": "Status",
+    "auctioneer": "[NEEDS_TRANSLATION]Auction house"
   },
   "myCredit": {
     "pageTitle": "Beheer uw krediet en bied limieten",
@@ -427,7 +429,8 @@
     "rejectedCreditStatusMessage": "Uw verzoek voor een biedlimiet is afgewezen. Uw huidige biedlimiet is {{amount}}.",
     "rejectedCreditStatusMessageUnlimited": "Uw krediet aanvraag is geweigerd. U heeft onbeperkt limiet",
     "errorSubmittingCreditRequest": "Fout bij het verzenden van uw biedlimietverzoek.",
-    "generalError": "Er is een fout opgetreden. Probeer het opnieuw."
+    "generalError": "Er is een fout opgetreden. Probeer het opnieuw.",
+    "networkLimitsUnavailable": "[NEEDS_TRANSLATION]Your bidding limits with {{auctioneer}} could not be loaded right now. Please try again later."
   },
   "userBlock": {
     "login": "Inloggen",
@@ -606,7 +609,8 @@
     "termsRejectedMessage": "U moet akkoord gaan met de veilingvoorwaarden om in deze veiling te kunnen bieden.",
     "statusLabel": "Status",
     "premiumBreakdown": "{{hammer}} + {{premium}} opgeld*",
-    "premiumFootnote": "*Prijs is exclusief belastingen en verzendkosten."
+    "premiumFootnote": "*Prijs is exclusief belastingen en verzendkosten.",
+    "networkAccountPending": "[NEEDS_TRANSLATION]Preparing your account with this auction house..."
   },
   "search": {
     "placeholder": "Zoek kavels"
@@ -663,7 +667,8 @@
     "loginRequired": "Svp inloggen om items aan de favorieten toe te voegen",
     "showDescription": "Beschrijving tonen",
     "hideDescription": "Beschrijving verbergen",
-    "close": "Sluiten"
+    "close": "Sluiten",
+    "auctioneer": "[NEEDS_TRANSLATION]Auction house"
   },
   "filters": {
     "saleLabel": "veiling",
