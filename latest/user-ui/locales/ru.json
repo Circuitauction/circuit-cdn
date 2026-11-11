@@ -177,7 +177,7 @@
     "errors": {
       "badCredentials": "Нам не удалось подтвердить вашу учётную запись. Пожалуйста, проверьте правильность введённых адреса электронной почты и пароля. Если проблема сохраняется, вы можете сбросить пароль по ссылке «Забыли пароль?» ниже или связаться с нами для получения помощи.",
       "networkError": "Проблема с соединением. Пожалуйста, попробуйте позже.",
-      "serverError": "[NEEDS_TRANSLATION]We couldn't sign you in right now because of a problem on our side. Please try again later, or contact us if it continues."
+      "serverError": "Сейчас мы не можем выполнить вход из-за проблемы на нашей стороне. Пожалуйста, повторите попытку позже или свяжитесь с нами, если проблема не исчезнет."
     }
   },
   "register": {
@@ -396,7 +396,7 @@
     "showMoreCount": "ещё +{{count}}",
     "soldForLabel": "Цена продажи",
     "status": "Статус",
-    "auctioneer": "[NEEDS_TRANSLATION]Auction house"
+    "auctioneer": "Аукционный дом"
   },
   "myCredit": {
     "pageTitle": "Управление лимитами ставок",
@@ -430,7 +430,7 @@
     "rejectedCreditStatusMessageUnlimited": "Ваш запрос лимита ставок отклонён. У вас неограниченный лимит ставок.",
     "errorSubmittingCreditRequest": "Ошибка при отправке запроса на лимит ставок.",
     "generalError": "Произошла ошибка. Пожалуйста, попробуйте ещё раз.",
-    "networkLimitsUnavailable": "[NEEDS_TRANSLATION]Your bidding limits with {{auctioneer}} could not be loaded right now. Please try again later."
+    "networkLimitsUnavailable": "Не удалось загрузить ваши лимиты ставок в {{auctioneer}}. Пожалуйста, повторите попытку позже."
   },
   "userBlock": {
     "login": "Войти",
@@ -610,7 +610,7 @@
     "statusLabel": "Статус",
     "premiumBreakdown": "{{hammer}} + {{premium}} ком. покупателя*",
     "premiumFootnote": "*Цена не включает налоги и стоимость доставки.",
-    "networkAccountPending": "[NEEDS_TRANSLATION]Preparing your account with this auction house..."
+    "networkAccountPending": "Подготавливаем ваш аккаунт в этом аукционном доме..."
   },
   "search": {
     "placeholder": "Поиск лотов..."
@@ -668,7 +668,7 @@
     "showDescription": "Показать описание",
     "hideDescription": "Скрыть описание",
     "close": "Закрыть",
-    "auctioneer": "[NEEDS_TRANSLATION]Auction house"
+    "auctioneer": "Аукционный дом"
   },
   "filters": {
     "saleLabel": "Аукцион",
@@ -1067,6 +1067,10 @@
     "resendFailed": "Не удалось отправить письмо для подтверждения. Пожалуйста, попробуйте позже.",
     "requiredTitle": "Подтвердите адрес электронной почты",
     "requiredText": "Ваша учетная запись ожидает подтверждения адреса электронной почты. Перейдите по ссылке в письме, которое мы вам отправили, чтобы увидеть свою учетную запись, ставки и избранное.",
-    "requiredTextWithEmail": "Ваша учетная запись ожидает подтверждения адреса электронной почты. Перейдите по ссылке в письме, которое мы отправили на {{email}}, чтобы увидеть свою учетную запись, ставки и избранное."
+    "requiredTextWithEmail": "Ваша учетная запись ожидает подтверждения адреса электронной почты. Перейдите по ссылке в письме, которое мы отправили на {{email}}, чтобы увидеть свою учетную запись, ставки и избранное.",
+    "preparingTitle": "Ваш аккаунт проверяется",
+    "preparingText": "Это займёт всего несколько секунд. Ваш аккаунт откроется автоматически, как только будет готов.",
+    "preparingSlow": "Настройка вашего аккаунта занимает больше времени, чем ожидалось. Пожалуйста, обновите страницу через минуту. Если проблема не исчезнет, свяжитесь с нами.",
+    "reload": "Обновить страницу"
   }
 }

@@ -177,7 +177,7 @@
     "errors": {
       "badCredentials": "Wir konnten Ihre Angaben nicht verifizieren. Bitte Prüfen Sie, ob Sie die korrekte E-Mail-Adresse und das richtige Passwort verwenden. Sollten Sie weiterhin Probleme haben sich anzumelden, benutzen Sie bitte die 'Passwort vergessen' - Funktion um Ihr Passwort zurückzusetzen, oder kontaktieren Sie uns.",
       "networkError": "Verbindungsproblem. Bitte versuchen Sie es später erneut. (Login)",
-      "serverError": "[NEEDS_TRANSLATION]We couldn't sign you in right now because of a problem on our side. Please try again later, or contact us if it continues."
+      "serverError": "Wir können Sie gerade nicht anmelden, da auf unserer Seite ein Problem aufgetreten ist. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns, falls das Problem weiterhin besteht."
     }
   },
   "register": {
@@ -396,7 +396,7 @@
     "showMoreCount": "+{{count}} weitere",
     "soldForLabel": "Zuschlagspreis",
     "status": "Status",
-    "auctioneer": "[NEEDS_TRANSLATION]Auction house"
+    "auctioneer": "Auktionshaus"
   },
   "myCredit": {
     "pageTitle": "Verwalten Sie Ihre Kredit- und Bietlimite",
@@ -430,7 +430,7 @@
     "rejectedCreditStatusMessageUnlimited": "Ihre Kreditanfrage wurde zurückgewiesen. Sie haben bereits unlimitierten Kredit.",
     "errorSubmittingCreditRequest": "Fehler beim Senden Ihrer Bietlimit-Anfrage.",
     "generalError": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
-    "networkLimitsUnavailable": "[NEEDS_TRANSLATION]Your bidding limits with {{auctioneer}} could not be loaded right now. Please try again later."
+    "networkLimitsUnavailable": "Ihre Bietlimits bei {{auctioneer}} konnten gerade nicht geladen werden. Bitte versuchen Sie es später erneut."
   },
   "userBlock": {
     "login": "Anmelden",
@@ -610,7 +610,7 @@
     "statusLabel": "Status",
     "premiumBreakdown": "{{hammer}} + {{premium}} Aufgeld*",
     "premiumFootnote": "*Preis ohne Steuern und Versandkosten.",
-    "networkAccountPending": "[NEEDS_TRANSLATION]Preparing your account with this auction house..."
+    "networkAccountPending": "Ihr Konto bei diesem Auktionshaus wird vorbereitet..."
   },
   "search": {
     "placeholder": "Durchsuche Lose ..."
@@ -668,7 +668,7 @@
     "showDescription": "Beschreibung anzeigen",
     "hideDescription": "Beschreibung ausblenden",
     "close": "Schließen",
-    "auctioneer": "[NEEDS_TRANSLATION]Auction house"
+    "auctioneer": "Auktionshaus"
   },
   "filters": {
     "saleLabel": "Auktion",
@@ -1067,6 +1067,10 @@
     "resendFailed": "Die Bestätigungs-E-Mail konnte nicht gesendet werden. Bitte versuchen Sie es später erneut.",
     "requiredTitle": "Bitte bestätigen Sie Ihre E-Mail-Adresse",
     "requiredText": "Ihr Konto wartet auf die Bestätigung Ihrer E-Mail-Adresse. Öffnen Sie den Link in der E-Mail, die wir Ihnen gesendet haben, um Ihr Konto, Ihre Gebote und Favoriten zu sehen.",
-    "requiredTextWithEmail": "Ihr Konto wartet auf die Bestätigung Ihrer E-Mail-Adresse. Öffnen Sie den Link in der E-Mail, die wir an {{email}} gesendet haben, um Ihr Konto, Ihre Gebote und Favoriten zu sehen."
+    "requiredTextWithEmail": "Ihr Konto wartet auf die Bestätigung Ihrer E-Mail-Adresse. Öffnen Sie den Link in der E-Mail, die wir an {{email}} gesendet haben, um Ihr Konto, Ihre Gebote und Favoriten zu sehen.",
+    "preparingTitle": "Ihr Konto wird überprüft",
+    "preparingText": "Dies dauert nur wenige Sekunden. Ihr Konto öffnet sich automatisch, sobald es bereit ist.",
+    "preparingSlow": "Die Einrichtung Ihres Kontos dauert länger als erwartet. Bitte laden Sie die Seite in einer Minute neu. Sollte das Problem weiterhin bestehen, kontaktieren Sie uns bitte.",
+    "reload": "Seite neu laden"
   }
 }
