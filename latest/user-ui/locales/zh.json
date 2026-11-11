@@ -610,7 +610,8 @@
     "statusLabel": "状态",
     "premiumBreakdown": "{{hammer}} + {{premium}} 买家佣金*",
     "premiumFootnote": "*价格不含税费和运费。",
-    "networkAccountPending": "正在为您准备在该拍卖行的账户..."
+    "networkAccountPending": "正在为您准备在该拍卖行的账户...",
+    "confirmEmailToBid": "请确认您的电子邮件地址以便出价。请打开我们发送给您的电子邮件中的链接。"
   },
   "search": {
     "placeholder": "Search lots..."

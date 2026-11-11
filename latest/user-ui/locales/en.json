@@ -616,7 +616,8 @@
     "statusLabel": "Status",
     "networkAccountPending": "Preparing your account with this auction house...",
     "premiumBreakdown": "{{hammer}} + {{premium}} BP*",
-    "premiumFootnote": "*Price does not include taxes or shipping fees."
+    "premiumFootnote": "*Price does not include taxes or shipping fees.",
+    "confirmEmailToBid": "Please confirm your email address to place bids. Open the link in the email we sent you."
   },
   "search": {
     "placeholder": "Search lots..."

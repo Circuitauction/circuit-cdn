@@ -610,7 +610,8 @@
     "statusLabel": "Status",
     "premiumBreakdown": "{{hammer}} + {{premium}} Aufgeld*",
     "premiumFootnote": "*Preis ohne Steuern und Versandkosten.",
-    "networkAccountPending": "Ihr Konto bei diesem Auktionshaus wird vorbereitet..."
+    "networkAccountPending": "Ihr Konto bei diesem Auktionshaus wird vorbereitet...",
+    "confirmEmailToBid": "Bitte bestätigen Sie Ihre E-Mail-Adresse, um Gebote abzugeben. Öffnen Sie den Link in der E-Mail, die wir Ihnen gesendet haben."
   },
   "search": {
     "placeholder": "Durchsuche Lose ..."

@@ -610,7 +610,8 @@
     "statusLabel": "Status",
     "premiumBreakdown": "{{hammer}} + {{premium}} opgeld*",
     "premiumFootnote": "*Prijs is exclusief belastingen en verzendkosten.",
-    "networkAccountPending": "Uw account bij dit veilinghuis wordt voorbereid..."
+    "networkAccountPending": "Uw account bij dit veilinghuis wordt voorbereid...",
+    "confirmEmailToBid": "Bevestig uw e-mailadres om biedingen te plaatsen. Open de link in de e-mail die we u hebben gestuurd."
   },
   "search": {
     "placeholder": "Zoek kavels"

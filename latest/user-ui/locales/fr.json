@@ -610,7 +610,8 @@
     "statusLabel": "Statut",
     "premiumBreakdown": "{{hammer}} + {{premium}} frais acheteur*",
     "premiumFootnote": "*Prix hors taxes et frais d'expédition.",
-    "networkAccountPending": "Préparation de votre compte auprès de cette maison de ventes..."
+    "networkAccountPending": "Préparation de votre compte auprès de cette maison de ventes...",
+    "confirmEmailToBid": "Veuillez confirmer votre adresse e-mail pour placer des enchères. Ouvrez le lien dans l'e-mail que nous vous avons envoyé."
   },
   "search": {
     "placeholder": "Rechercher des lots..."
