@@ -57214,10 +57214,15 @@ var _Gizra$circuit_bid$Config_Decoder$decodeAffiliate = A3(
 			'siteName',
 			_elm_lang$core$Json_Decode$string,
 			_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$decode(_Gizra$circuit_bid$Config_Model$Affiliate))));
+var _Gizra$circuit_bid$Config_Decoder$decodeAffiliates = A2(
+	_elm_lang$core$Json_Decode$map,
+	_elm_lang$core$List$filterMap(_elm_lang$core$Basics$identity),
+	_elm_lang$core$Json_Decode$list(
+		_elm_lang$core$Json_Decode$maybe(_Gizra$circuit_bid$Config_Decoder$decodeAffiliate)));
 var _Gizra$circuit_bid$Config_Decoder$decodeConfig = A4(
 	_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$optional,
 	'affiliates',
-	_elm_lang$core$Json_Decode$list(_Gizra$circuit_bid$Config_Decoder$decodeAffiliate),
+	_Gizra$circuit_bid$Config_Decoder$decodeAffiliates,
 	{ctor: '[]'},
 	A3(
 		_NoRedInk$elm_decode_pipeline$Json_Decode_Pipeline$required,
