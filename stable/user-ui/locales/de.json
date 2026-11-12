@@ -176,7 +176,8 @@
     "passwordPlaceholder": "Geben Sie Ihr Passwort ein",
     "errors": {
       "badCredentials": "Wir konnten Ihre Angaben nicht verifizieren. Bitte Prüfen Sie, ob Sie die korrekte E-Mail-Adresse und das richtige Passwort verwenden. Sollten Sie weiterhin Probleme haben sich anzumelden, benutzen Sie bitte die 'Passwort vergessen' - Funktion um Ihr Passwort zurückzusetzen, oder kontaktieren Sie uns.",
-      "networkError": "Verbindungsproblem. Bitte versuchen Sie es später erneut. (Login)"
+      "networkError": "Verbindungsproblem. Bitte versuchen Sie es später erneut. (Login)",
+      "serverError": "Wir können Sie gerade nicht anmelden, da auf unserer Seite ein Problem aufgetreten ist. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns, falls das Problem weiterhin besteht."
     }
   },
   "register": {
@@ -394,7 +395,8 @@
     "showLess": "Weniger Gebote anzeigen",
     "showMoreCount": "+{{count}} weitere",
     "soldForLabel": "Zuschlagspreis",
-    "status": "Status"
+    "status": "Status",
+    "auctioneer": "Auktionshaus"
   },
   "myCredit": {
     "pageTitle": "Verwalten Sie Ihre Kredit- und Bietlimite",
@@ -427,7 +429,8 @@
     "rejectedCreditStatusMessage": "Ihre Anfrage für ein Bietlimit wurde abgelehnt. Ihr aktuelles Bietlimit beträgt {{amount}}.",
     "rejectedCreditStatusMessageUnlimited": "Ihre Kreditanfrage wurde zurückgewiesen. Sie haben bereits unlimitierten Kredit.",
     "errorSubmittingCreditRequest": "Fehler beim Senden Ihrer Bietlimit-Anfrage.",
-    "generalError": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+    "generalError": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "networkLimitsUnavailable": "Ihre Bietlimits bei {{auctioneer}} konnten gerade nicht geladen werden. Bitte versuchen Sie es später erneut."
   },
   "userBlock": {
     "login": "Anmelden",
@@ -606,7 +609,9 @@
     "termsRejectedMessage": "Sie müssen den Auktionsbedingungen zustimmen, um in dieser Auktion bieten zu können.",
     "statusLabel": "Status",
     "premiumBreakdown": "{{hammer}} + {{premium}} Aufgeld*",
-    "premiumFootnote": "*Preis ohne Steuern und Versandkosten."
+    "premiumFootnote": "*Preis ohne Steuern und Versandkosten.",
+    "networkAccountPending": "Ihr Konto bei diesem Auktionshaus wird vorbereitet...",
+    "confirmEmailToBid": "Bitte bestätigen Sie Ihre E-Mail-Adresse, um Gebote abzugeben. Öffnen Sie den Link in der E-Mail, die wir Ihnen gesendet haben."
   },
   "search": {
     "placeholder": "Durchsuche Lose ..."
@@ -663,7 +668,8 @@
     "loginRequired": "Bitte loggen Sie sich ein, um Losen Ihren Favoriten hinzuzufügen",
     "showDescription": "Beschreibung anzeigen",
     "hideDescription": "Beschreibung ausblenden",
-    "close": "Schließen"
+    "close": "Schließen",
+    "auctioneer": "Auktionshaus"
   },
   "filters": {
     "saleLabel": "Auktion",
@@ -1059,6 +1065,13 @@
     "resend": "E-Mail erneut senden",
     "sending": "Die Bestätigungs-E-Mail wird gesendet…",
     "sent": "Wir haben Ihnen eine neue Bestätigungs-E-Mail gesendet.",
-    "resendFailed": "Die Bestätigungs-E-Mail konnte nicht gesendet werden. Bitte versuchen Sie es später erneut."
+    "resendFailed": "Die Bestätigungs-E-Mail konnte nicht gesendet werden. Bitte versuchen Sie es später erneut.",
+    "requiredTitle": "Bitte bestätigen Sie Ihre E-Mail-Adresse",
+    "requiredText": "Ihr Konto wartet auf die Bestätigung Ihrer E-Mail-Adresse. Öffnen Sie den Link in der E-Mail, die wir Ihnen gesendet haben, um Ihr Konto, Ihre Gebote und Favoriten zu sehen.",
+    "requiredTextWithEmail": "Ihr Konto wartet auf die Bestätigung Ihrer E-Mail-Adresse. Öffnen Sie den Link in der E-Mail, die wir an {{email}} gesendet haben, um Ihr Konto, Ihre Gebote und Favoriten zu sehen.",
+    "preparingTitle": "Ihr Konto wird überprüft",
+    "preparingText": "Dies dauert nur wenige Sekunden. Ihr Konto öffnet sich automatisch, sobald es bereit ist.",
+    "preparingSlow": "Die Einrichtung Ihres Kontos dauert länger als erwartet. Bitte laden Sie die Seite in einer Minute neu. Sollte das Problem weiterhin bestehen, kontaktieren Sie uns bitte.",
+    "reload": "Seite neu laden"
   }
 }

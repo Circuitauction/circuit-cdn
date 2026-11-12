@@ -176,7 +176,8 @@
     "passwordPlaceholder": "Entrez votre mot de passe",
     "errors": {
       "badCredentials": "Nous n'avons pas pu vérifier votre compte. Veuillez vérifier que vous avez saisi le bon e-mail et mot de passe. Si vous continuez à avoir des problèmes, vous pouvez réinitialiser votre mot de passe en utilisant le lien 'Mot de passe oublié' ci-dessous, ou nous contacter pour plus d'assistance.",
-      "networkError": "Problème de connexion. Veuillez réessayer plus tard."
+      "networkError": "Problème de connexion. Veuillez réessayer plus tard.",
+      "serverError": "Nous ne pouvons pas vous connecter pour le moment en raison d'un problème de notre côté. Veuillez réessayer plus tard ou nous contacter si le problème persiste."
     }
   },
   "register": {
@@ -394,7 +395,8 @@
     "showLess": "Afficher moins d'enchères",
     "showMoreCount": "+{{count}} de plus",
     "soldForLabel": "Prix d'adjudication",
-    "status": "Statut"
+    "status": "Statut",
+    "auctioneer": "Maison de ventes"
   },
   "myCredit": {
     "pageTitle": "Gérer votre crédit et limites d'enchères",
@@ -427,7 +429,8 @@
     "rejectedCreditStatusMessage": "Votre demande de limite d'enchères a été rejetée. Votre limite d'enchères actuelle est de {{amount}}.",
     "rejectedCreditStatusMessageUnlimited": "Votre demande de crédit a été rejetée. Vous avez un crédit illimité.",
     "errorSubmittingCreditRequest": "Erreur lors de l'envoi de votre demande de limite d'enchères.",
-    "generalError": "Une erreur est survenue. Veuillez réessayer."
+    "generalError": "Une erreur est survenue. Veuillez réessayer.",
+    "networkLimitsUnavailable": "Vos limites d'enchères auprès de {{auctioneer}} n'ont pas pu être chargées pour le moment. Veuillez réessayer plus tard."
   },
   "userBlock": {
     "login": "Connexion",
@@ -606,7 +609,9 @@
     "termsRejectedMessage": "Vous devez approuver les conditions de vente pour placer des enchères dans cette vente.",
     "statusLabel": "Statut",
     "premiumBreakdown": "{{hammer}} + {{premium}} frais acheteur*",
-    "premiumFootnote": "*Prix hors taxes et frais d'expédition."
+    "premiumFootnote": "*Prix hors taxes et frais d'expédition.",
+    "networkAccountPending": "Préparation de votre compte auprès de cette maison de ventes...",
+    "confirmEmailToBid": "Veuillez confirmer votre adresse e-mail pour placer des enchères. Ouvrez le lien dans l'e-mail que nous vous avons envoyé."
   },
   "search": {
     "placeholder": "Rechercher des lots..."
@@ -663,7 +668,8 @@
     "loginRequired": "Veuillez vous connecter pour ajouter des articles aux favoris",
     "showDescription": "Afficher la description",
     "hideDescription": "Masquer la description",
-    "close": "Fermer"
+    "close": "Fermer",
+    "auctioneer": "Maison de ventes"
   },
   "filters": {
     "saleLabel": "Vente",
@@ -1059,6 +1065,13 @@
     "resend": "Renvoyer l'e-mail",
     "sending": "Envoi de l'e-mail de confirmation…",
     "sent": "Nous vous avons envoyé un nouvel e-mail de confirmation.",
-    "resendFailed": "L'e-mail de confirmation n'a pas pu être envoyé. Veuillez réessayer plus tard."
+    "resendFailed": "L'e-mail de confirmation n'a pas pu être envoyé. Veuillez réessayer plus tard.",
+    "requiredTitle": "Veuillez confirmer votre adresse e-mail",
+    "requiredText": "Votre compte attend la confirmation de votre adresse e-mail. Ouvrez le lien de l'e-mail que nous vous avons envoyé pour voir votre compte, vos enchères et vos favoris.",
+    "requiredTextWithEmail": "Votre compte attend la confirmation de votre adresse e-mail. Ouvrez le lien de l'e-mail que nous avons envoyé à {{email}} pour voir votre compte, vos enchères et vos favoris.",
+    "preparingTitle": "Votre compte est en cours de vérification",
+    "preparingText": "Cela ne prend que quelques secondes. Votre compte s'ouvrira automatiquement dès qu'il sera prêt.",
+    "preparingSlow": "La configuration de votre compte prend plus de temps que prévu. Veuillez recharger la page dans une minute. Si le problème persiste, contactez-nous.",
+    "reload": "Recharger la page"
   }
 }

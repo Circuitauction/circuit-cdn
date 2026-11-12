@@ -176,7 +176,8 @@
     "passwordPlaceholder": "Voer uw wachtwoord in",
     "errors": {
       "badCredentials": "We konden uw account niet verifiëren. Controleer of u het juiste e-mailadres en wachtwoord heeft ingevoerd. Als u problemen blijft ondervinden, kunt u uw wachtwoord opnieuw instellen via de link 'Wachtwoord vergeten' hieronder, of neem contact met ons op voor verdere hulp.",
-      "networkError": "Verbindingsprobleem. Probeer het later opnieuw."
+      "networkError": "Verbindingsprobleem. Probeer het later opnieuw.",
+      "serverError": "We kunnen u op dit moment niet aanmelden door een probleem aan onze kant. Probeer het later opnieuw of neem contact met ons op als het probleem aanhoudt."
     }
   },
   "register": {
@@ -394,7 +395,8 @@
     "showLess": "Minder biedingen tonen",
     "showMoreCount": "+{{count}} meer",
     "soldForLabel": "Verkocht voor",
-    "status": "Status"
+    "status": "Status",
+    "auctioneer": "Veilinghuis"
   },
   "myCredit": {
     "pageTitle": "Beheer uw krediet en bied limieten",
@@ -427,7 +429,8 @@
     "rejectedCreditStatusMessage": "Uw verzoek voor een biedlimiet is afgewezen. Uw huidige biedlimiet is {{amount}}.",
     "rejectedCreditStatusMessageUnlimited": "Uw krediet aanvraag is geweigerd. U heeft onbeperkt limiet",
     "errorSubmittingCreditRequest": "Fout bij het verzenden van uw biedlimietverzoek.",
-    "generalError": "Er is een fout opgetreden. Probeer het opnieuw."
+    "generalError": "Er is een fout opgetreden. Probeer het opnieuw.",
+    "networkLimitsUnavailable": "Uw biedlimieten bij {{auctioneer}} konden op dit moment niet worden geladen. Probeer het later opnieuw."
   },
   "userBlock": {
     "login": "Inloggen",
@@ -606,7 +609,9 @@
     "termsRejectedMessage": "U moet akkoord gaan met de veilingvoorwaarden om in deze veiling te kunnen bieden.",
     "statusLabel": "Status",
     "premiumBreakdown": "{{hammer}} + {{premium}} opgeld*",
-    "premiumFootnote": "*Prijs is exclusief belastingen en verzendkosten."
+    "premiumFootnote": "*Prijs is exclusief belastingen en verzendkosten.",
+    "networkAccountPending": "Uw account bij dit veilinghuis wordt voorbereid...",
+    "confirmEmailToBid": "Bevestig uw e-mailadres om biedingen te plaatsen. Open de link in de e-mail die we u hebben gestuurd."
   },
   "search": {
     "placeholder": "Zoek kavels"
@@ -663,7 +668,8 @@
     "loginRequired": "Svp inloggen om items aan de favorieten toe te voegen",
     "showDescription": "Beschrijving tonen",
     "hideDescription": "Beschrijving verbergen",
-    "close": "Sluiten"
+    "close": "Sluiten",
+    "auctioneer": "Veilinghuis"
   },
   "filters": {
     "saleLabel": "veiling",
@@ -1059,6 +1065,13 @@
     "resend": "E-mail opnieuw verzenden",
     "sending": "De bevestigingsmail wordt verzonden…",
     "sent": "We hebben u een nieuwe bevestigingsmail gestuurd.",
-    "resendFailed": "De bevestigingsmail kon niet worden verzonden. Probeer het later opnieuw."
+    "resendFailed": "De bevestigingsmail kon niet worden verzonden. Probeer het later opnieuw.",
+    "requiredTitle": "Bevestig uw e-mailadres",
+    "requiredText": "Uw account wacht op de bevestiging van uw e-mailadres. Open de link in de e-mail die we u hebben gestuurd om uw account, biedingen en favorieten te zien.",
+    "requiredTextWithEmail": "Uw account wacht op de bevestiging van uw e-mailadres. Open de link in de e-mail die we naar {{email}} hebben gestuurd om uw account, biedingen en favorieten te zien.",
+    "preparingTitle": "Uw account wordt geverifieerd",
+    "preparingText": "Dit duurt maar een paar seconden. Uw account opent automatisch zodra het klaar is.",
+    "preparingSlow": "Het instellen van uw account duurt langer dan verwacht. Laad de pagina over een minuut opnieuw. Neem contact met ons op als het probleem aanhoudt.",
+    "reload": "Pagina opnieuw laden"
   }
 }

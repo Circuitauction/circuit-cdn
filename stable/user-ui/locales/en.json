@@ -176,7 +176,8 @@
     "passwordPlaceholder": "Enter your password",
     "errors": {
       "badCredentials": "We couldn't verify your account. Please check that you've entered the correct email and password. If you continue to have trouble, you can reset your password using the 'Forgot Password' link below, or contact us for more assistance.",
-      "networkError": "Connection problem. Please try again later."
+      "networkError": "Connection problem. Please try again later.",
+      "serverError": "We couldn't sign you in right now because of a problem on our side. Please try again later, or contact us if it continues."
     }
   },
   "register": {
@@ -615,7 +616,8 @@
     "statusLabel": "Status",
     "networkAccountPending": "Preparing your account with this auction house...",
     "premiumBreakdown": "{{hammer}} + {{premium}} BP*",
-    "premiumFootnote": "*Price does not include taxes or shipping fees."
+    "premiumFootnote": "*Price does not include taxes or shipping fees.",
+    "confirmEmailToBid": "Please confirm your email address to place bids. Open the link in the email we sent you."
   },
   "search": {
     "placeholder": "Search lots..."
@@ -1063,6 +1065,13 @@
     "resend": "Send the email again",
     "sending": "Sending the confirmation email…",
     "sent": "We sent you a new confirmation email.",
-    "resendFailed": "The confirmation email could not be sent. Please try again later."
+    "resendFailed": "The confirmation email could not be sent. Please try again later.",
+    "requiredTitle": "Please confirm your email address",
+    "requiredText": "Your account is waiting for your email confirmation. Open the link in the email we sent you to see your account, bids and favorites.",
+    "requiredTextWithEmail": "Your account is waiting for your email confirmation. Open the link in the email we sent to {{email}} to see your account, bids and favorites.",
+    "preparingTitle": "Your account is being verified",
+    "preparingText": "This only takes a few seconds. Your account opens automatically when it is ready.",
+    "preparingSlow": "Setting up your account is taking longer than expected. Please reload the page in a minute. If it continues, please contact us.",
+    "reload": "Reload the page"
   }
 }

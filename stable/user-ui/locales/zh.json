@@ -176,7 +176,8 @@
     "passwordPlaceholder": "请输入您的密码",
     "errors": {
       "badCredentials": "We couldn't verify your account. Please check that you've entered the correct email and password. If you continue to have trouble, you can reset your password using the 'Forgot Password' link below, or contact us for more assistance.",
-      "networkError": "Connection problem. Please try again later."
+      "networkError": "Connection problem. Please try again later.",
+      "serverError": "由于我们这边出现问题，目前无法为您登录。请稍后再试，如问题持续存在，请联系我们。"
     }
   },
   "register": {
@@ -394,7 +395,8 @@
     "showLess": "收起部分出价",
     "showMoreCount": "还有 {{count}} 条",
     "soldForLabel": "落槌价",
-    "status": "状态"
+    "status": "状态",
+    "auctioneer": "拍卖行"
   },
   "myCredit": {
     "pageTitle": "Manage Your Credit & Bidding Limits",
@@ -427,7 +429,8 @@
     "rejectedCreditStatusMessage": "您的出价限额申请已被拒绝。您当前的出价限额为 {{amount}}。",
     "rejectedCreditStatusMessageUnlimited": "Your credit request has been rejected. You have unlimited credit.",
     "errorSubmittingCreditRequest": "提交出价限额申请时出错。",
-    "generalError": "发生错误，请重试。"
+    "generalError": "发生错误，请重试。",
+    "networkLimitsUnavailable": "暂时无法加载您在 {{auctioneer}} 的出价限额。请稍后再试。"
   },
   "userBlock": {
     "login": "登录",
@@ -606,7 +609,9 @@
     "termsRejectedMessage": "您必须同意拍卖条款才能在本场拍卖会出价。",
     "statusLabel": "状态",
     "premiumBreakdown": "{{hammer}} + {{premium}} 买家佣金*",
-    "premiumFootnote": "*价格不含税费和运费。"
+    "premiumFootnote": "*价格不含税费和运费。",
+    "networkAccountPending": "正在为您准备在该拍卖行的账户...",
+    "confirmEmailToBid": "请确认您的电子邮件地址以便出价。请打开我们发送给您的电子邮件中的链接。"
   },
   "search": {
     "placeholder": "Search lots..."
@@ -663,7 +668,8 @@
     "loginRequired": "Please login to add items to favorites",
     "showDescription": "显示描述",
     "hideDescription": "隐藏描述",
-    "close": "关闭"
+    "close": "关闭",
+    "auctioneer": "拍卖行"
   },
   "filters": {
     "saleLabel": "Sale",
@@ -1059,6 +1065,13 @@
     "resend": "重新发送邮件",
     "sending": "正在发送确认邮件…",
     "sent": "我们已向您发送了一封新的确认邮件。",
-    "resendFailed": "无法发送确认邮件，请稍后再试。"
+    "resendFailed": "无法发送确认邮件，请稍后再试。",
+    "requiredTitle": "请确认您的电子邮件地址",
+    "requiredText": "您的账户正在等待电子邮件确认。请打开我们发送给您的邮件中的链接，以查看您的账户、出价和收藏。",
+    "requiredTextWithEmail": "您的账户正在等待电子邮件确认。请打开我们发送至 {{email}} 的邮件中的链接，以查看您的账户、出价和收藏。",
+    "preparingTitle": "正在验证您的账户",
+    "preparingText": "只需几秒钟。账户准备就绪后将自动打开。",
+    "preparingSlow": "设置您的账户所需时间比预期更长。请在一分钟后重新加载页面。如问题持续存在，请联系我们。",
+    "reload": "重新加载页面"
   }
 }
