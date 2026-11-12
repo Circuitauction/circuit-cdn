@@ -45928,10 +45928,6 @@ var _Gizra$circuit_bid$App_Model$HandleMemberUser = F3(
 	function (a, b, c) {
 		return {ctor: 'HandleMemberUser', _0: a, _1: b, _2: c};
 	});
-var _Gizra$circuit_bid$App_Model$HandleMemberToken = F2(
-	function (a, b) {
-		return {ctor: 'HandleMemberToken', _0: a, _1: b};
-	});
 var _Gizra$circuit_bid$App_Model$SwitchToSaleSite = function (a) {
 	return {ctor: 'SwitchToSaleSite', _0: a};
 };
@@ -46677,6 +46673,18 @@ var _Gizra$circuit_bid$App_Utils$configForSale = function (model) {
 		},
 		model.config);
 };
+var _Gizra$circuit_bid$App_Utils$memberSiteToken = F2(
+	function (accessToken, site) {
+		var networkToken = A2(
+			_elm_lang$core$Maybe$withDefault,
+			accessToken,
+			_elm_lang$core$List$head(
+				A2(_elm_lang$core$String$split, '@', accessToken)));
+		return A2(
+			_elm_lang$core$Basics_ops['++'],
+			networkToken,
+			A2(_elm_lang$core$Basics_ops['++'], '@', site));
+	});
 
 var _Gizra$circuit_bid$Pages_Clerk_Fetch$fetch = F4(
 	function (authUser, backend, saleUuid, model) {
@@ -71455,26 +71463,6 @@ var _Gizra$circuit_bid$App_Update$fetchMemberUser = F3(
 				_lukewestby$elm_http_builder$HttpBuilder$get(
 					A2(_elm_lang$core$Basics_ops['++'], backendUrl, '/api/me'))));
 	});
-var _Gizra$circuit_bid$App_Update$fetchMemberToken = F3(
-	function (backendUrl, accessToken, site) {
-		return A3(
-			_Gizra$circuit_bid$Utils_WebData$sendWithHandler,
-			A2(_elm_lang$core$Json_Decode$field, 'token', _elm_lang$core$Json_Decode$string),
-			_Gizra$circuit_bid$App_Model$HandleMemberToken(site),
-			A2(
-				_lukewestby$elm_http_builder$HttpBuilder$withQueryParams,
-				{
-					ctor: '::',
-					_0: {ctor: '_Tuple2', _0: 'site', _1: site},
-					_1: {
-						ctor: '::',
-						_0: {ctor: '_Tuple2', _0: 'access_token', _1: accessToken},
-						_1: {ctor: '[]'}
-					}
-				},
-				_lukewestby$elm_http_builder$HttpBuilder$get(
-					A2(_elm_lang$core$Basics_ops['++'], backendUrl, '/api/network-token'))));
-	});
 var _Gizra$circuit_bid$App_Update$memberSiteRefused = F3(
 	function (location, error, model) {
 		var maybeError = A3(_Gizra$circuit_bid$Error_Utils$httpError, 'App.Update', location, error);
@@ -72630,32 +72618,27 @@ var _Gizra$circuit_bid$App_Update$update = F2(
 							})
 					};
 				case 'SwitchToSaleSite':
+					var _p62 = _p22._0;
 					return {
 						ctor: '_Tuple2',
 						_0: _elm_lang$core$Native_Utils.update(
 							model,
 							{memberSite: _krisajenkins$remotedata$RemoteData$Loading}),
-						_1: A3(_Gizra$circuit_bid$App_Update$fetchMemberToken, backendUrl, model.accessToken, _p22._0)
+						_1: A3(
+							_Gizra$circuit_bid$App_Update$fetchMemberUser,
+							backendUrl,
+							_p62,
+							A2(_Gizra$circuit_bid$App_Utils$memberSiteToken, model.accessToken, _p62))
 					};
-				case 'HandleMemberToken':
-					if (_p22._1.ctor === 'Ok') {
-						return {
-							ctor: '_Tuple2',
-							_0: model,
-							_1: A3(_Gizra$circuit_bid$App_Update$fetchMemberUser, backendUrl, _p22._0, _p22._1._0)
-						};
-					} else {
-						return A3(_Gizra$circuit_bid$App_Update$memberSiteRefused, 'HandleMemberToken', _p22._1._0, model);
-					}
 				case 'HandleMemberUser':
 					if (_p22._2.ctor === 'Ok') {
-						var _p63 = _p22._2._0;
-						var _p62 = A2(
+						var _p64 = _p22._2._0;
+						var _p63 = A2(
 							_Gizra$circuit_bid$App_Update$update,
 							_Gizra$circuit_bid$App_Model$MsgPusher(_Gizra$circuit_bid$Pusher_Model$Logout),
 							model);
-						var modelPusherOut = _p62._0;
-						var pusherLogoutCmd = _p62._1;
+						var modelPusherOut = _p63._0;
+						var pusherLogoutCmd = _p63._1;
 						var backend = model.backend;
 						return {
 							ctor: '_Tuple2',
@@ -72664,7 +72647,7 @@ var _Gizra$circuit_bid$App_Update$update = F2(
 								{
 									accessToken: _p22._1,
 									user: _elm_lang$core$Maybe$Just(
-										_Gizra$circuit_bid$User_Model$Authenticated(_p63)),
+										_Gizra$circuit_bid$User_Model$Authenticated(_p64)),
 									memberSite: _krisajenkins$remotedata$RemoteData$Success(_p22._0),
 									backend: _elm_lang$core$Native_Utils.update(
 										backend,
@@ -72685,7 +72668,7 @@ var _Gizra$circuit_bid$App_Update$update = F2(
 											ctor: '::',
 											_0: _Gizra$circuit_bid$Ports$setSentryUser(
 												{
-													id: _Gizra$elm_restful$Restful_Endpoint$fromEntityUuid(_p63.uuid)
+													id: _Gizra$elm_restful$Restful_Endpoint$fromEntityUuid(_p64.uuid)
 												}),
 											_1: {ctor: '[]'}
 										}
@@ -72696,17 +72679,17 @@ var _Gizra$circuit_bid$App_Update$update = F2(
 						return A3(_Gizra$circuit_bid$App_Update$memberSiteRefused, 'HandleMemberUser', _p22._2._0, model);
 					}
 				case 'SetAuthentication':
-					var _p64 = _p22._0._0;
+					var _p65 = _p22._0._0;
 					return {
 						ctor: '_Tuple2',
 						_0: _elm_lang$core$Native_Utils.update(
 							model,
 							{
-								accessToken: _p64,
+								accessToken: _p65,
 								user: _elm_lang$core$Maybe$Just(_p22._0._1),
 								memberSite: _krisajenkins$remotedata$RemoteData$NotAsked
 							}),
-						_1: _Gizra$circuit_bid$Ports$saveAccessToken(_p64)
+						_1: _Gizra$circuit_bid$Ports$saveAccessToken(_p65)
 					};
 				case 'SetCurrentDate':
 					return A2(
@@ -72724,20 +72707,20 @@ var _Gizra$circuit_bid$App_Update$update = F2(
 					model = _v28;
 					continue update;
 				case 'SetTheme':
-					var _p65 = _p22._0;
+					var _p66 = _p22._0;
 					return A2(
 						_elm_lang$core$Platform_Cmd_ops['!'],
 						_elm_lang$core$Native_Utils.update(
 							model,
-							{theme: _p65}),
+							{theme: _p66}),
 						{
 							ctor: '::',
 							_0: _Gizra$circuit_bid$Ports$saveTheme(
-								_Gizra$circuit_bid$App_Model$themeToString(_p65)),
+								_Gizra$circuit_bid$App_Model$themeToString(_p66)),
 							_1: {ctor: '[]'}
 						});
 				case 'SetBidderLimitDisplay':
-					var _p66 = _p22._0;
+					var _p67 = _p22._0;
 					var backend = model.backend;
 					return A2(
 						_elm_lang$core$Platform_Cmd_ops['!'],
@@ -72746,12 +72729,12 @@ var _Gizra$circuit_bid$App_Update$update = F2(
 							{
 								backend: _elm_lang$core$Native_Utils.update(
 									backend,
-									{bidderLimitDisplay: _p66})
+									{bidderLimitDisplay: _p67})
 							}),
 						{
 							ctor: '::',
 							_0: _Gizra$circuit_bid$Ports$saveBidderLimitDisplay(
-								_Gizra$circuit_bid$Backend_BidderInfo_Model$bidderLimitDisplayToString(_p66)),
+								_Gizra$circuit_bid$Backend_BidderInfo_Model$bidderLimitDisplayToString(_p67)),
 							_1: {ctor: '[]'}
 						});
 				default:
@@ -72769,8 +72752,8 @@ var _Gizra$circuit_bid$App_Update$update = F2(
 var _Gizra$circuit_bid$App_Update$pusherLogin = F3(
 	function (user, model, sale) {
 		var getChannel = function (uuid) {
-			var _p67 = model.activePage;
-			switch (_p67.ctor) {
+			var _p68 = model.activePage;
+			switch (_p68.ctor) {
 				case 'SaleAuctioneer':
 					return _Gizra$circuit_bid$Pusher_Model$Privileged(uuid);
 				case 'SaleClerk':
@@ -72804,9 +72787,9 @@ var _Gizra$circuit_bid$App_Update$pusherLogin = F3(
 						},
 						_krisajenkins$remotedata$RemoteData$toMaybe(
 							_Gizra$circuit_bid$App_Utils$configForSale(model))));
-				var _p68 = A2(_Gizra$circuit_bid$App_Update$update, msg, model);
-				var updatedModel = _p68._0;
-				var pusherLoginCmd = _p68._1;
+				var _p69 = A2(_Gizra$circuit_bid$App_Update$update, msg, model);
+				var updatedModel = _p69._0;
+				var pusherLoginCmd = _p69._1;
 				return {
 					ctor: '_Tuple3',
 					_0: updatedModel.pusher,
@@ -72814,9 +72797,9 @@ var _Gizra$circuit_bid$App_Update$pusherLogin = F3(
 					_2: pusherLoginCmd
 				};
 			});
-		var _p69 = sale;
-		if (_p69.ctor === 'Success') {
-			var channel = getChannel(_p69._0.uuid);
+		var _p70 = sale;
+		if (_p70.ctor === 'Success') {
+			var channel = getChannel(_p70._0.uuid);
 			return (!_elm_lang$core$Native_Utils.eq(
 				model.pusher.currentChannel,
 				_elm_lang$core$Maybe$Just(
@@ -72831,13 +72814,13 @@ var _Gizra$circuit_bid$App_Update$pusherLogin = F3(
 	});
 var _Gizra$circuit_bid$App_Update$init = function (flags) {
 	var configCmd = function () {
-		var _p70 = _Gizra$circuit_bid$Config_Fetch$jbullBypass(flags.hostname);
-		if (_p70.ctor === 'Just') {
+		var _p71 = _Gizra$circuit_bid$Config_Fetch$jbullBypass(flags.hostname);
+		if (_p71.ctor === 'Just') {
 			return A2(
 				_elm_lang$core$Task$perform,
 				_Gizra$circuit_bid$App_Model$HandleFetchConfig,
 				_elm_lang$core$Task$succeed(
-					_krisajenkins$remotedata$RemoteData$Success(_p70._0)));
+					_krisajenkins$remotedata$RemoteData$Success(_p71._0)));
 		} else {
 			return A2(
 				_Gizra$circuit_bid$Config_Fetch$fetchConfig,
@@ -72862,15 +72845,15 @@ var _Gizra$circuit_bid$App_Update$init = function (flags) {
 			var queryParams = A3(
 				_elm_lang$core$List$foldl,
 				F2(
-					function (_p71, accum) {
-						var _p72 = _p71;
-						var _p73 = _p72._0;
-						return (_elm_lang$core$Native_Utils.eq(_p73, 'redirect') || _elm_lang$core$Native_Utils.eq(_p73, 'origin')) ? accum : {
+					function (_p72, accum) {
+						var _p73 = _p72;
+						var _p74 = _p73._0;
+						return (_elm_lang$core$Native_Utils.eq(_p74, 'redirect') || _elm_lang$core$Native_Utils.eq(_p74, 'origin')) ? accum : {
 							ctor: '::',
 							_0: A2(
 								_elm_lang$core$Basics_ops['++'],
-								_p73,
-								A2(_elm_lang$core$Basics_ops['++'], '=', _p72._1)),
+								_p74,
+								A2(_elm_lang$core$Basics_ops['++'], '=', _p73._1)),
 							_1: accum
 						};
 					}),
