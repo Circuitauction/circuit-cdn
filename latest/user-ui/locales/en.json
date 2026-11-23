@@ -1073,5 +1073,34 @@
     "preparingText": "This only takes a few seconds. Your account opens automatically when it is ready.",
     "preparingSlow": "Setting up your account is taking longer than expected. Please reload the page in a minute. If it continues, please contact us.",
     "reload": "Reload the page"
+  },
+  "sellEnquiry": {
+    "title": "Tell us what you want to sell",
+    "intro": "Describe what you have and we will get back to you about selling it at auction.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "description": "What would you like to sell?",
+    "descriptionPlaceholder": "What it is, how many pieces, their condition, and anything you know about where they come from.",
+    "estimatedValue": "Estimated value",
+    "estimatedValueHelp": "Optional. A rough figure is enough.",
+    "photos": "Photos",
+    "photosHelp": "Optional. Up to {{max}} photos; they are made smaller before sending.",
+    "addPhotos": "Add photos",
+    "removePhoto": "Remove photo {{number}}",
+    "preparingPhotos": "Preparing photos…",
+    "photoCount": "{{count}} of {{max}} photos",
+    "submit": "Send enquiry",
+    "submitting": "Sending…",
+    "sentTitle": "Enquiry sent",
+    "sentText": "Thank you. We have received your enquiry and will contact you soon.",
+    "sendAnother": "Send another enquiry",
+    "errors": {
+      "missingFields": "Please fill in your name, your email and what you would like to sell.",
+      "captchaRequired": "Please complete the captcha before sending.",
+      "submitError": "The enquiry could not be sent. Please try again.",
+      "tooManyPhotos": "You can attach up to {{max}} photos.",
+      "photoUnreadable": "This photo could not be read: {{name}}. Try a JPEG or PNG."
+    }
   }
 }

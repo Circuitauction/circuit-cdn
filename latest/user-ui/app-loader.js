@@ -37,6 +37,12 @@
       return response.json();
     })
     .then(function(manifest) {
+      // Which build this is (manifest.json `build`, see config-overrides.js).
+      if (manifest.build) {
+        window.circuitUserUiBuild = manifest.build;
+        console.info('Circuit user-ui ' + manifest.build.version + ' (' + manifest.build.commit + ', ' + manifest.build.builtAt + ')');
+      }
+
       // Load main JS and CSS
       loadScript(getFullUrl(manifest['main.js']), true);
       loadStylesheet(getFullUrl(manifest['main.css']));

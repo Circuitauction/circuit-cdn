@@ -1073,5 +1073,34 @@
     "preparingText": "Cela ne prend que quelques secondes. Votre compte s'ouvrira automatiquement dès qu'il sera prêt.",
     "preparingSlow": "La configuration de votre compte prend plus de temps que prévu. Veuillez recharger la page dans une minute. Si le problème persiste, contactez-nous.",
     "reload": "Recharger la page"
+  },
+  "sellEnquiry": {
+    "title": "Dites-nous ce que vous souhaitez vendre",
+    "intro": "Décrivez ce que vous avez et nous vous recontacterons pour sa mise en vente aux enchères.",
+    "name": "Nom",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "description": "Que souhaitez-vous vendre ?",
+    "descriptionPlaceholder": "De quoi il s’agit, le nombre de pièces, leur état et ce que vous savez de leur provenance.",
+    "estimatedValue": "Valeur estimée",
+    "estimatedValueHelp": "Facultatif. Un ordre de grandeur suffit.",
+    "photos": "Photos",
+    "photosHelp": "Facultatif. Jusqu’à {{max}} photos ; elles sont réduites avant l’envoi.",
+    "addPhotos": "Ajouter des photos",
+    "removePhoto": "Retirer la photo {{number}}",
+    "preparingPhotos": "Préparation des photos…",
+    "photoCount": "{{count}} photos sur {{max}}",
+    "submit": "Envoyer la demande",
+    "submitting": "Envoi…",
+    "sentTitle": "Demande envoyée",
+    "sentText": "Merci. Nous avons bien reçu votre demande et vous contacterons bientôt.",
+    "sendAnother": "Envoyer une autre demande",
+    "errors": {
+      "missingFields": "Veuillez indiquer votre nom, votre e-mail et ce que vous souhaitez vendre.",
+      "captchaRequired": "Veuillez compléter le captcha avant l’envoi.",
+      "submitError": "La demande n’a pas pu être envoyée. Veuillez réessayer.",
+      "tooManyPhotos": "Vous pouvez joindre jusqu’à {{max}} photos.",
+      "photoUnreadable": "Cette photo n’a pas pu être lue : {{name}}. Essayez un fichier JPEG ou PNG."
+    }
   }
 }
