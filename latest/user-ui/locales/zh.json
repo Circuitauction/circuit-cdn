@@ -936,9 +936,6 @@
   "poweredBy": {
     "label": "<0>Auction Software by Circuit AI</0> © {{year}}"
   },
-  "featured": {
-    "noSaleNid": "请提供拍卖会 NID 以查看精选拍品。"
-  },
   "clerk": {
     "noSales": "当前没有进行中的拍卖会。",
     "tabs": {

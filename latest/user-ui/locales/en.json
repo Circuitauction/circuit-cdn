@@ -942,9 +942,6 @@
   "poweredBy": {
     "label": "<0>Auction Software by Circuit AI</0> © {{year}}"
   },
-  "featured": {
-    "noSaleNid": "Please provide a sale NID to view featured items."
-  },
   "clerk": {
     "noSales": "No ongoing sales right now.",
     "tabs": {
