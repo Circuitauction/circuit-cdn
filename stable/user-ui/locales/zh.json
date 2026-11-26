@@ -936,9 +936,6 @@
   "poweredBy": {
     "label": "<0>Auction Software by Circuit AI</0> © {{year}}"
   },
-  "featured": {
-    "noSaleNid": "请提供拍卖会 NID 以查看精选拍品。"
-  },
   "clerk": {
     "noSales": "当前没有进行中的拍卖会。",
     "tabs": {
@@ -1073,5 +1070,34 @@
     "preparingText": "只需几秒钟。账户准备就绪后将自动打开。",
     "preparingSlow": "设置您的账户所需时间比预期更长。请在一分钟后重新加载页面。如问题持续存在，请联系我们。",
     "reload": "重新加载页面"
+  },
+  "sellEnquiry": {
+    "title": "告诉我们您想出售什么",
+    "intro": "请描述您的藏品，我们会就拍卖出售事宜与您联系。",
+    "name": "姓名",
+    "email": "电子邮箱",
+    "phone": "电话",
+    "description": "您想出售什么？",
+    "descriptionPlaceholder": "是什么、有多少件、品相如何，以及您了解的来源信息。",
+    "estimatedValue": "估计价值",
+    "estimatedValueHelp": "选填。大概的数字即可。",
+    "photos": "照片",
+    "photosHelp": "可选。最多 {{max}} 张照片；发送前会自动缩小。",
+    "addPhotos": "添加照片",
+    "removePhoto": "移除第 {{number}} 张照片",
+    "preparingPhotos": "正在处理照片…",
+    "photoCount": "{{count}} / {{max}} 张照片",
+    "submit": "发送咨询",
+    "submitting": "发送中…",
+    "sentTitle": "咨询已发送",
+    "sentText": "谢谢。我们已收到您的咨询，会尽快与您联系。",
+    "sendAnother": "再发送一条咨询",
+    "errors": {
+      "missingFields": "请填写姓名、电子邮箱以及您想出售的物品。",
+      "captchaRequired": "发送前请完成验证码。",
+      "submitError": "咨询发送失败，请重试。",
+      "tooManyPhotos": "最多可附加 {{max}} 张照片。",
+      "photoUnreadable": "无法读取此照片：{{name}}。请尝试 JPEG 或 PNG 格式。"
+    }
   }
 }

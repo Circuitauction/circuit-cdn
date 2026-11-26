@@ -936,9 +936,6 @@
   "poweredBy": {
     "label": "<0>Auction Software by Circuit AI</0> © {{year}}"
   },
-  "featured": {
-    "noSaleNid": "Geef een veiling-NID op om uitgelichte kavels te bekijken."
-  },
   "clerk": {
     "noSales": "Momenteel geen lopende veilingen.",
     "tabs": {
@@ -1073,5 +1070,34 @@
     "preparingText": "Dit duurt maar een paar seconden. Uw account opent automatisch zodra het klaar is.",
     "preparingSlow": "Het instellen van uw account duurt langer dan verwacht. Laad de pagina over een minuut opnieuw. Neem contact met ons op als het probleem aanhoudt.",
     "reload": "Pagina opnieuw laden"
+  },
+  "sellEnquiry": {
+    "title": "Vertel ons wat u wilt verkopen",
+    "intro": "Beschrijf wat u heeft en wij nemen contact met u op over de verkoop op de veiling.",
+    "name": "Naam",
+    "email": "E-mail",
+    "phone": "Telefoon",
+    "description": "Wat wilt u verkopen?",
+    "descriptionPlaceholder": "Wat het is, hoeveel stuks, de staat ervan en wat u weet over de herkomst.",
+    "estimatedValue": "Geschatte waarde",
+    "estimatedValueHelp": "Optioneel. Een ruwe schatting is genoeg.",
+    "photos": "Foto’s",
+    "photosHelp": "Optioneel. Maximaal {{max}} foto’s; ze worden vóór het verzenden verkleind.",
+    "addPhotos": "Foto’s toevoegen",
+    "removePhoto": "Foto {{number}} verwijderen",
+    "preparingPhotos": "Foto’s voorbereiden…",
+    "photoCount": "{{count}} van {{max}} foto’s",
+    "submit": "Aanvraag versturen",
+    "submitting": "Bezig met versturen…",
+    "sentTitle": "Aanvraag verstuurd",
+    "sentText": "Dank u. Wij hebben uw aanvraag ontvangen en nemen spoedig contact met u op.",
+    "sendAnother": "Nog een aanvraag versturen",
+    "errors": {
+      "missingFields": "Vul uw naam, uw e-mail en wat u wilt verkopen in.",
+      "captchaRequired": "Voltooi de captcha voordat u verstuurt.",
+      "submitError": "De aanvraag kon niet worden verstuurd. Probeer het opnieuw.",
+      "tooManyPhotos": "U kunt maximaal {{max}} foto’s toevoegen.",
+      "photoUnreadable": "Deze foto kon niet worden gelezen: {{name}}. Probeer een JPEG of PNG."
+    }
   }
 }

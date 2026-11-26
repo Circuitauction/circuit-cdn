@@ -936,9 +936,6 @@
   "poweredBy": {
     "label": "<0>Auction Software by Circuit AI</0> © {{year}}"
   },
-  "featured": {
-    "noSaleNid": "Bitte geben Sie eine Auktions-NID an, um hervorgehobene Lose anzuzeigen."
-  },
   "clerk": {
     "noSales": "Derzeit keine laufenden Auktionen.",
     "tabs": {
@@ -1073,5 +1070,34 @@
     "preparingText": "Dies dauert nur wenige Sekunden. Ihr Konto öffnet sich automatisch, sobald es bereit ist.",
     "preparingSlow": "Die Einrichtung Ihres Kontos dauert länger als erwartet. Bitte laden Sie die Seite in einer Minute neu. Sollte das Problem weiterhin bestehen, kontaktieren Sie uns bitte.",
     "reload": "Seite neu laden"
+  },
+  "sellEnquiry": {
+    "title": "Sagen Sie uns, was Sie verkaufen möchten",
+    "intro": "Beschreiben Sie, was Sie haben, und wir melden uns bei Ihnen wegen eines Verkaufs in der Auktion.",
+    "name": "Name",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "description": "Was möchten Sie verkaufen?",
+    "descriptionPlaceholder": "Was es ist, wie viele Stücke, ihr Zustand und was Sie über ihre Herkunft wissen.",
+    "estimatedValue": "Geschätzter Wert",
+    "estimatedValueHelp": "Optional. Eine grobe Angabe genügt.",
+    "photos": "Fotos",
+    "photosHelp": "Optional. Bis zu {{max}} Fotos; sie werden vor dem Senden verkleinert.",
+    "addPhotos": "Fotos hinzufügen",
+    "removePhoto": "Foto {{number}} entfernen",
+    "preparingPhotos": "Fotos werden vorbereitet…",
+    "photoCount": "{{count}} von {{max}} Fotos",
+    "submit": "Anfrage senden",
+    "submitting": "Wird gesendet…",
+    "sentTitle": "Anfrage gesendet",
+    "sentText": "Vielen Dank. Wir haben Ihre Anfrage erhalten und melden uns in Kürze.",
+    "sendAnother": "Weitere Anfrage senden",
+    "errors": {
+      "missingFields": "Bitte geben Sie Ihren Namen, Ihre E-Mail und an, was Sie verkaufen möchten.",
+      "captchaRequired": "Bitte lösen Sie das Captcha vor dem Senden.",
+      "submitError": "Die Anfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+      "tooManyPhotos": "Sie können bis zu {{max}} Fotos anhängen.",
+      "photoUnreadable": "Dieses Foto konnte nicht gelesen werden: {{name}}. Versuchen Sie es mit JPEG oder PNG."
+    }
   }
 }
